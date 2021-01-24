@@ -11,10 +11,11 @@
 
   .nav-bar{
     display: flex;
-    width: 40%;
+    width: 50%;
+    margin: 4vh;
     justify-content: space-between;
     a {
-      font-size: 1.5vh;
+      font-size: 1.5vmax;
       text-decoration: none;
       color: rgb(0,0,0);
     }

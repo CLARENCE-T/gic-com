@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+  get 'talents/index'
   get 'pages/index'
+  get 'events/index'
+
   root to: 'pages#index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  resources :pages
+  resources :events
+  resources :talents
+  resources :contact, only: [:index]
 end

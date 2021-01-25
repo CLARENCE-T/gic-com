@@ -16,10 +16,18 @@
 
 @import "pages/index";
 
+// External librairy
+
+@import "font-awesome";
 
 
 
 body {
   margin: 0 0;
   padding: 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0,0,0);
 }

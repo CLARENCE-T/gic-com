@@ -3,6 +3,7 @@
     <div class="talent_pic">
       <%if talent.images.attached? %>
         <%= cl_image_tag(talent.images.key, width: 200, height: 200, crop: :thumb, gravity: :face, dpr: 4.0 )%>
+
       <% end %>
     </div>
     <div class="talent_name">

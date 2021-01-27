@@ -1,1 +1,6 @@
-<h1>Index</h1>
+
+<% @events.each do |event| %>
+  <%= link_to event_path(event) do %>
+    <%= cl_image_tag(event.images.first.key, width: 200, height: 200, crop: :thumb, gravity: :face, dpr: 4.0) %>
+  <% end %>
+<% end %>

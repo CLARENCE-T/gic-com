@@ -1,3 +1,12 @@
 <% @talents.each do |talent| %>
-  <%= talent.first_name %>
+  <div class="talent_card">
+    <div class="talent_pic">
+      <%if talent.images.attached? %>
+        <%= cl_image_tag(talent.images.key, width: 200, height: 200, crop: :thumb, gravity: :face, dpr: 4.0 )%>
+      <% end %>
+    </div>
+    <div class="talent_name">
+      <%= talent.first_name %>
+    </div>
+  </div>
 <% end %>

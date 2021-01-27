@@ -32,3 +32,17 @@ narcisse.images.attach(io: file, filename: 'narcisse.png', content_type: 'image/
 # lutecia = Event.create! description: 'Soirée OFF'
 # file = URI.open('https://res.cloudinary.com/dwklvsgae/image/upload/v1611761177/EVENTS/LUTECIA%20JOSEPHINE/JustinPrinz-technogym-1195_rm2483.jpg')
 # lutecia.images.attach(io: file, filename: 'narcisse.png', content_type: 'image/jpg')
+
+bio = About.create! description: "
+GIC répond à toutes demandes en termes de relation publique, de quelques talents lors de vos présentations presse et diners ou encore un public plus large correspondant à vos évènements.
+
+GIC création de contenue photos et videos haut de gamme pour vos réseaux sociaux et presse.
+
+GIC met à disposition son savoir faire en matière de consulting et DA dans les milieux de l'hôtellerie & mode.
+
+Creation du storie telling de vos evenemts
+
+GIC accompagne en stratégie lors de la conception et du déroulement d’une evénement.
+" , title: "Qui sommes-nous ?"
+
+thomas = Talent.create! first_name: "Thomas"

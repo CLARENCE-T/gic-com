@@ -29,6 +29,6 @@ off = Event.create! description: 'Soirée OFF', date: Date.strptime('23/09/2020'
 file = URI.open('https://res.cloudinary.com/dwklvsgae/image/upload/v1611761114/EVENTS/OFF/OFF_Paris_Seine_c_Julien_Mouffron-Gardner-117_2_v5hx7o.jpg')
 off.images.attach(io: file, filename: 'narcisse.png', content_type: 'image/jpg')
 
-off = Event.create! description: 'Soirée OFF'
+lutecia = Event.create! description: 'Soirée OFF'
 file = URI.open('https://res.cloudinary.com/dwklvsgae/image/upload/v1611761177/EVENTS/LUTECIA%20JOSEPHINE/JustinPrinz-technogym-1195_rm2483.jpg')
-off.images.attach(io: file, filename: 'narcisse.png', content_type: 'image/jpg')
+lutecia.images.attach(io: file, filename: 'narcisse.png', content_type: 'image/jpg')

@@ -1,13 +1,20 @@
-<% @talents.each do |talent| %>
-  <div class="talent_card">
-    <div class="talent_pic">
-      <%if talent.images.attached? %>
-        <%= cl_image_tag(talent.images.key, width: 200, height: 200, crop: :thumb, gravity: :face, dpr: 4.0 )%>
-
-      <% end %>
-    </div>
-    <div class="talent_name">
-      <%= talent.first_name %>
-    </div>
+<div class="talent_card">
+  <div class="left_side">
+    <% @talents.each_with_index do |talent,idx| %>
+      <div class="talent_name" id="talent_name_<%=idx%>">
+        <%= talent.first_name %>
+        <%= talent.last_name %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+  <div class="right_side">
+    <% @talents.each_with_index do |talent,idx| %>
+      <div class="talent_pic <% if idx == 0 %>active<% end %> " id="talent_pic_<%=idx%>">
+        <%if talent.images.attached? %>
+          <%= cl_image_tag(talent.images.key, width: 500, height: 700, crop: :thumb, gravity: :face, dpr: 4.0 )%>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+

@@ -6,20 +6,20 @@
   min-height:100vh;
 }
 
-button {
-  display: none;
-}
-
-
 .main-content {
-  margin: 8vh;
+  margin-top: 10%;
   flex-grow: 1;
-  width: 100vmin;
+  width: 95%;
 }
 
 // VIMEO
 
-.top {
+.video_container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.video_balmain {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
@@ -38,4 +38,13 @@ iframe {
   position: relative;
   padding-bottom: 200%;
   transform: translateY(-35.95%);
+}
+
+
+.d-logo {
+  display: flex;
+  flex-wrap: wrap;
+  .logo {
+    margin-left: 2vh;
+  }
 }

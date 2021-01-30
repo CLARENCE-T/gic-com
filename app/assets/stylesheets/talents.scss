@@ -1,20 +1,35 @@
 // Place all the styles related to the talents controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .talent_card {
-  display: flex;
-  height: 20vh;
-  width: 20vh;
-  overflow: hidden;
-  .talent_pic {
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .talent_name {
+  display:  flex;
+  position: absolute;
+  .left_side {
     position: relative;
+    display:flex;
+    flex-direction: row;
     z-index: 1;
+    width: 50%;
+    height: 100%;
+  }
+  .right_side {
+    position: absolute;
+    left: 0vh;
+
+  }
+
+
+  .talent_name {
+    font-size: 7vh;
+
+  }
+  .talent_pic {
+    display: none;
+    height: 100vh;
+  }
+  .talent_pic:active {
+    display: none;
+    height: 100vh;
   }
 }

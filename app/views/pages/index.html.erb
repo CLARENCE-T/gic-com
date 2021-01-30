@@ -1,5 +1,19 @@
-  <div class="top">
+<div class="video_container">
+  <div class="video_balmain">
     <div class="wrapper">
       <iframe src="https://player.vimeo.com/video/236559492?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&transparent=0&autoplay=1" width="640" height="480" frameborder="0" title="Funny Cat Videos For Kids" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
     </div>
   </div>
+</div>
+<div class="logo">
+  <div class="d-logo">
+<i class="fas fa-arrow-to-bottom"></i>
+    <% @logos.each do |logo| %>
+      <div class="logo">
+        <% if logo.image.attached? %>
+          <%= cl_image_tag(logo.image.key,alt: logo.title, width: 100, height: 100, crop: :pad, dpr: 4.0) %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

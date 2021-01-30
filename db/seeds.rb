@@ -19,12 +19,6 @@ p 'create user'
 
 geoffrey = User.create! email: 'gervais.geoffrey@gmail.com', password: '123456', password_confirmation: '123456', admin: true
 
-p 'create events'
-
-narcisse = Event.create! description: 'Narcisse Mag', date: Date.strptime('20/10/2017', '%d/%m/%Y')
-file = URI.open('https://www.tirage-photo-art.com/wp-content/uploads/2018/07/eva-milkonskaya-1-1170x470_c-1170x470_c.jpg')
-narcisse.images.attach(io: file, filename: 'narcisse.png', content_type: 'image/jpg')
-
 # off = Event.create! description: 'Soirée OFF', date: Date.strptime('23/09/2020', '%d/%m/%Y')
 # file = URI.open('https://res.cloudinary.com/dwklvsgae/image/upload/v1611761114/EVENTS/OFF/OFF_Paris_Seine_c_Julien_Mouffron-Gardner-117_2_v5hx7o.jpg')
 # off.images.attach(io: file, filename: 'narcisse.png', content_type: 'image/jpg')
@@ -45,4 +39,4 @@ Creation du storie telling de vos evenemts
 GIC accompagne en stratégie lors de la conception et du déroulement d’une evénement.
 " , title: "Qui sommes-nous ?"
 
-thomas = Talent.create! first_name: "Thomas"
+Talent.create! first_name: "Thomas"

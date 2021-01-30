@@ -1,0 +1,17 @@
+.log_in_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.field {
+  margin: 5vh;
+  height: 3vh;
+}

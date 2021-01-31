@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contacts/index'
+  get 'contacts/new'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   get 'contact/index'
@@ -11,5 +13,5 @@ Rails.application.routes.draw do
   resources :pages
   resources :events
   resources :talents
-  resources :contact, only: [:index]
+  resources :contacts
 end

@@ -1,0 +1,22 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.presentation {
+  margin: auto;
+  width: 60vw;
+}
+
+#new_contact {
+  margin: 4vh auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  input {
+    margin-top: 3vh;
+  }
+}

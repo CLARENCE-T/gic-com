@@ -4,8 +4,35 @@
 
 
 .mosaic_pics {
-  margin-top: 17%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.event_card {
+  position: relative;
+  text-align: center;
+  font-size: 8vh;
+
+}
+
+.event_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+
+  &:hover {
+    color: red;
+    opacity: 1;
+  }
+}
+
+
+.diapo_events {
+  display: flex;
+}
+
+.events_pictures {
+  max-height: 80vh;
 }

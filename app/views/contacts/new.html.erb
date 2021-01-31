@@ -1,0 +1,9 @@
+<div class="presentation">
+  <h1><%= About.last.title %></h1>
+  <%= About.last.description %>
+</div>
+
+<%= simple_form_for @contact, html: { class: 'form-horizontal' },wrapper: :horizontal_form  do |f| %>
+  <%= f.input :mail %>
+  <%= f.button :submit %>
+<% end %>

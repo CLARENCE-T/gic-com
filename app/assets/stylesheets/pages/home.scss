@@ -7,7 +7,7 @@
 }
 
 .main-content {
-  margin-top: 10%;
+  margin-top: 20%;
   flex-grow: 1;
   width: 95%;
 }
@@ -16,10 +16,11 @@
 
 .video_container {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
 }
 
 .video_balmain {
+  margin-top: -10%;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
@@ -41,10 +42,26 @@ iframe {
 }
 
 
+//ABOUT
+
+.about_home {
+  margin: 20vh auto;
+  width: 60%;
+  text-align: center;
+  font-size: 3vh;
+}
+
+
+
+// LOGO
+
 .d-logo {
   display: flex;
   flex-wrap: wrap;
   .logo {
     margin-left: 2vh;
+  }
+  .logo:hover {
+
   }
 }

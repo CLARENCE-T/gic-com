@@ -1,3 +1,7 @@
+
+
+<div class="diapo_events">
 <% @event.pictures.each do |picture| %>
-  <%= cl_image_tag(picture.image.key, width: 170, crop: :limit, gravity: :center, dpr: 4.0) %>
+  <%= cl_image_tag(picture.image.key, width: 300, crop: :limit, gravity: :center, quality: 100, dpr: 3, class: "events_pictures") %>
 <% end %>
+</div>

@@ -38,5 +38,3 @@ Creation du storie telling de vos evenemts
 
 GIC accompagne en stratégie lors de la conception et du déroulement d’une evénement.
 " , title: "Qui sommes-nous ?"
-
-Talent.create! first_name: "Thomas"

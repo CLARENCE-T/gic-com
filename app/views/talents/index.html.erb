@@ -18,3 +18,26 @@
   </div>
 </div>
 
+
+
+<script>
+  var active_pic = document.querySelector(".talent_pic.active")
+  var active_name = document.querySelectorAll(".talent_name.active")
+  showSlides()
+  function showSlides() {
+    var talent_name = document.querySelectorAll(".talent_name")
+    talent_name.forEach((element) => {
+      element.addEventListener("mouseover", (event) =>{
+          element.classList.add("active")
+      });
+      element.addEventListener("mouseout", (event) =>{
+          element.classList.remove("active")
+      });
+
+    });
+    var
+  }
+
+  active_pic.style.display = "flex";
+
+</script>

@@ -17,15 +17,17 @@
     left: 30vw;
 
     .talent_pic {
+      display: none;
       height: 100vh;
-
     }
   }
 
   .talent_name {
-    // background-color: $my-green;
     font-size: 7vh;
     margin-bottom: 4vh;
-    text-shadow: 0.5px 1px 1px white
+    text-shadow: 0.5px 1px 1px white;
+    &:hover {
+      background-color: rgba(0,0,0,0.3);
+    }
   }
 }

@@ -1,16 +1,4 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-between;
-  min-height:100vh;
-}
 
-.main-content {
-  margin-top: 24vh;
-  flex-grow: 1;
-  width: 95%;
-}
 
 // VIMEO
 
@@ -53,10 +41,6 @@ iframe {
 
 
 // LOGO
-.logo-container{
-
-}
-
 .d-logo {
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +56,7 @@ iframe {
 
 .text-newsletter {
   background-color: #ff5252;
-
+  cursor: pointer;
 }
 
 

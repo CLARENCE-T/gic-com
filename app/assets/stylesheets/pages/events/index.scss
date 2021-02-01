@@ -5,12 +5,17 @@
 
 .mosaic_pics {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  flex-wrap: wrap;
 }
 
 .event_card {
   position: relative;
   text-align: center;
   font-size: 8vh;
+  margin: 1vh;
 
 }
 

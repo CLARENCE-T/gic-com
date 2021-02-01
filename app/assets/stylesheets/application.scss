@@ -14,9 +14,20 @@
  *= require_self
  */
 
+
+
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/variables";
+@import "config/utility";
+
+
+
 @import "pages/index";
 
 // External librairy
+
 
 @import "font-awesome";
 
@@ -27,7 +38,12 @@ body {
   padding: 0 0;
 }
 
+h1, h2, p, div {
+  font-family: $body-font;
+}
+
 a {
+  font-family: $body-font;
   text-decoration: none;
   color: rgb(0,0,0);
 }

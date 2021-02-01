@@ -48,12 +48,14 @@ iframe {
   margin: 20vh auto;
   width: 60vw;
   text-align: center;
-  font-size: 3vmin;
 }
 
 
 
 // LOGO
+.logo-container{
+
+}
 
 .d-logo {
   display: flex;
@@ -65,3 +67,12 @@ iframe {
 
   }
 }
+
+//NEWSLETTER
+
+.text-newsletter {
+  background-color: #ff5252;
+
+}
+
+

@@ -6,11 +6,12 @@
   </div>
 </div>
 <div class="about_home">
+  <h1> <%= About.last.title %></h1>
   <%= About.last.description %>
 </div>
-<div class="logo">
+  <h1 class="ta-center">Ils nous ont fait confiance: </h1>
+<div class="logo-container">
   <div class="d-logo">
-<i class="fas fa-arrow-to-bottom"></i>
     <% @logos.each do |logo| %>
       <div class="logo">
         <% if logo.image.attached? %>
@@ -19,4 +20,8 @@
       </div>
     <% end %>
   </div>
+</div>
+<div class="text-newsletter ta-center">
+  <h1>Inscrivez-vous</h1>
+  <h1>à la Newsletter</h1>
 </div>

@@ -2,9 +2,10 @@
   <% @events.each do |event| %>
   <div class="event_card">
     <%= link_to event_path(event) do %>
-      <%= cl_image_tag(event.pictures.first.image.key, alt: event.title, width: 150, height: 150, crop: :thumb, dpr: 4.0) %>
+      <%= cl_image_tag(event.pictures.first.image.key, alt: event.title, width: 300, height: 300, crop: :thumb, dpr: 4.0) %>
     <div class="event_title">
-      <%= event.title %>
+      <h5> <%= event.title %> </h5>
+      <p><%= event.description %></p>
     </div>
     <% end %>
   </div>

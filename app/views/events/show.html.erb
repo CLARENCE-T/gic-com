@@ -3,7 +3,7 @@
     <div class="mySlides fade jc-around">
       <div class="numbertext"><%= idx + 1 %> / <%= @event.pictures.length %></div>
       <% if picture.image.attached? %>
-        <%= cl_image_tag(picture.image.key, width: 300, crop: :limit, gravity: :center, quality: 100, dpr: 3, class: "events_pictures") %>
+        <%= cl_image_tag(picture.image.key, width: 300, crop: :limit, gravity: :center, quality: 100, dpr: 3,alt: picture.description, class: "events_pictures") %>
       <% end %>
       <div class="text"><%= picture.description %></div>
     </div>

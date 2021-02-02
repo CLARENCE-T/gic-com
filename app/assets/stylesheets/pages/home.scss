@@ -45,7 +45,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   .logo {
-    margin-left: 2vh;
+    margin: 0.5vh;
   }
   .logo:hover {
 
@@ -60,3 +60,11 @@ iframe {
 }
 
 
+//POP UP
+.newsletter-modal {
+  background-color: white;
+  position: fixed;
+  left: 20vw;
+  z-index: 50;
+  padding: 8vh;
+}

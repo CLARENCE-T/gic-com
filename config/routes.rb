@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pictures/index'
+  get 'pictures/show'
   get 'contacts/index'
   get 'contacts/new'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
@@ -10,8 +12,11 @@ Rails.application.routes.draw do
 
   root to: 'pages#index'
 
-  resources :pages
-  resources :events
-  resources :talents
+  resources :pages, only: :show
+  resources :events, only: [:index, :show] do
+    resources :pictures, only: [:index, :show]
+  end
+
+  resources :talents, only: [:index, :show]
   resources :contacts
 end

@@ -6,7 +6,11 @@
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
-require("channels")
+//= require("channels")
+//= require ("jquery")
+//= require ("jquery_ujs")
+//= require masonry/masonry
+//= require_tree .
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -16,4 +20,14 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import { popNews } from "components/popNews"
+import { masonry } from "components/masonry"
+import { zoom } from "components/mosaic_zoom"
+
+
+
+
+document.addEventListener('turbolinks:load', () => {
+  masonry()
+  zoom()
+})
+

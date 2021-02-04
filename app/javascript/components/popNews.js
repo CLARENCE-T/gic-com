@@ -1,9 +1,0 @@
-const popNews = () => {
-
-
-
-
-
-}
-
-export {popNews}

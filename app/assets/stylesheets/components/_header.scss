@@ -1,5 +1,5 @@
 .header{
-  position: fixed;
+
   z-index: 10;
   display: flex;
   width: 100%;
@@ -7,9 +7,12 @@
   align-items: center;
   background-color: white;
 
+
   .main_logo {
     width: 55vmin;
   }
+
+
 
   .nav-bar{
     display: flex;

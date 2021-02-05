@@ -1,6 +1,5 @@
-
-
-<div class="header">
+<div class = "header <%=current_page?(controller: 'pictures', action: 'index') ?
+  "sticky" : "fixed" %>" >
   <div class="main_logo">
     <%= image_tag("logo_gic.png", class: "main_logo") %>
   </div>

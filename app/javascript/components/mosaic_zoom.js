@@ -1,24 +1,31 @@
 
 const zoom = () => {
-  const gridItems = document.querySelectorAll('.grid-item img');
+  const gridItems = document.querySelectorAll('.masonry-grid-item img');
   gridItems.forEach((element) => {
     element.addEventListener('click', (event) => {
-      console.log(element)
 
-      var next = document.querySelectorAll('.next, .prev')
-      next.forEach((element) => {
-        element.style.display = "block"
-      });
-      var img = document.createElement("img");
-      img.src = element.src;
-      img.alt = element.alt;
-      img.classList.add("fullscreen");
-      document.body.appendChild(img);
-      document.querySelector('.container').style.opacity = "0.2"
-      img.addEventListener('click', (event) => {
-        img.remove()
-        document.querySelector('.container').style.opacity = "1"
-      })
+      //removing old one
+      var fullscreen = document.querySelectorAll('.fullscreen')
+      var container = document.querySelector('.container')
+
+      //create new fullscreen image only if there is no fullscreen displayed
+      if (fullscreen.length == 0) {
+        //create img
+        var img = document.createElement("img");
+        img.src = element.src;
+        img.alt = element.alt;
+        img.classList.add("fullscreen");
+        document.body.appendChild(img);
+        //blur the background
+        document.querySelector('.container').classList.toggle('blur');
+        //click again to remove the fullscreen
+        img.addEventListener('click', (event) => {
+          img.remove()
+          document.querySelector('.container').classList.toggle('blur')
+        });
+      };
+
+
     });
   });
 }

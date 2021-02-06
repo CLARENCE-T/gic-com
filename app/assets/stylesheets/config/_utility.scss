@@ -1,5 +1,14 @@
+.d-flex{
+  display: flex;
+}
+.d-none {
+  display: none;
+}
 .ta-center{
   text-align: center;
+}
+.ai-center{
+  align-items: center;
 }
 .jc-around{
   justify-content: space-around;
@@ -7,13 +16,16 @@
 .jc-between{
   justify-content: space-between;
 }
+.jc-center {
+  justify-content: center;
+}
 .m-auto{
   margin: 0 auto;
 }
 .fixed {
   position: fixed;
 }
-
 .sticky {
   position: sticky;
 }
+

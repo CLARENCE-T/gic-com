@@ -16,7 +16,7 @@
     <div class="container">
       <%= render 'shared/flashes' %>
       <%= render 'shared/head' %>
-      <div class="main-content <%=current_page?(controller: 'pictures', action: 'index') ? "main-content-padding" : "" %> ">
+      <div class="main-content <%="main-content-padding" if params[:controller] == 'pictures' %> ">
         <%= yield %>
       </div>
     <p class="notice"><%= notice %></p>

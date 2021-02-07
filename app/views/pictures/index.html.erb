@@ -3,10 +3,11 @@
 <div id="masonry-container" class="masonry-grid">
   <% @event.pictures.each_with_index do |picture, idx| %>
     <div class="masonry-grid-item <%= 'masonry-grid-item--width2' if (idx % 3 == 0) %>">
-        <a class="prev" >&#10094;</a>
-        <a class="next" >&#10095;</a>
-        <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx} ) %>
-        <p><%= picture.description %> </p>
+<!--    <a class="prev" >&#10094;</a>
+        <a class="next" >&#10095;</a> -->
+        <% idxpicture = idx.to_s   %>
+        <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "event-pics") %>
+        <div class="d-none"><%= picture.description %> </div>
 
     </div>
   <% end %>

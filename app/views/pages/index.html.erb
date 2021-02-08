@@ -27,34 +27,58 @@
   </a>
 </div>
 
-<div class="video_container">
+<div class="video_container scrollreveal">
   <div class="video_balmain">
     <div class="wrapper">
       <iframe src="https://player.vimeo.com/video/236559492?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&transparent=0&autoplay=1" width="640" height="480" frameborder="0" title="Funny Cat Videos For Kids" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
     </div>
   </div>
 </div>
-<div class="about_home">
-  <h1> <%= About.last.title %></h1>
-  <p> <%= About.last.description %></p>
+
+
+<div class="about_home home_slide scrollreveal">
+  <div class="slide-content">
+    <h1> <%= About.last.title %></h1>
+    <p > <%= About.last.description %></p>
+  </div>
 </div>
-  <h1 class="ta-center">Ils nous ont fait confiance: </h1>
-<div class="logo-container">
-  <div class="d-logo jc-center">
-    <% @logos.each do |logo| %>
-      <div class="logo">
-        <% if logo.image.attached? %>
-          <%= cl_image_tag(logo.image.key,alt: logo.title, width: 100, height: 100, crop: :pad, dpr: 4.0) %>
-        <% end %>
+
+<div class="home_slide scrollreveal showroom">
+  <div id="masonry-container" class="masonry-grid">
+    <% @showroom.each_with_index do |picture, idx| %>
+      <div class="masonry-grid-item <%= 'masonry-grid-item--width3' if (idx % 3 == 0) %>">
+  <!--    <a class="prev" >&#10094;</a>
+          <a class="next" >&#10095;</a> -->
+          <% idxpicture = idx.to_s   %>
+          <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "event-pics") %>
+          <div class="d-none"><%= picture.description %> </div>
       </div>
     <% end %>
   </div>
 </div>
-<br>
-<div class="text-newsletter ta-center m-auto">
-  <h1>Inscrivez-vous</h1>
-  <h1>à la Newsletter</h1>
+
+<div class="logo-container home_slide scrollreveal">
+  <div class="slide-content">
+    <h1 class="ta-center">Ils nous ont fait confiance: </h1>
+    <div class="d-logo jc-center">
+      <% @logos.each do |logo| %>
+        <div class="logo">
+          <% if logo.image.attached? %>
+            <%= cl_image_tag(logo.image.key,alt: logo.title, width: 100, height: 100, crop: :pad, dpr: 4.0) %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+    <div class="text-newsletter ta-center m-auto">
+      <h1>Inscrivez-vous</h1>
+      <h1>à la Newsletter</h1>
+    </div>
+  </div>
 </div>
+<br>
+<script>
+  ScrollReveal().reveal('.scrollreveal', { delay: 200, interval: 10, reset: true });
+</script>
 
 
 

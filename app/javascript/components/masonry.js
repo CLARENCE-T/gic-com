@@ -21,7 +21,6 @@ const masonry = () => {
           gutter: 10,
           isFitWidth: true
         });
-        console.log('yo')
       // };
     },400);
   };

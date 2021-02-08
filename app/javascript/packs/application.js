@@ -26,6 +26,7 @@ import { zoom } from "components/mosaic_zoom"
 
 
 
+
 document.addEventListener('turbolinks:load', () => {
   masonry()
   zoom()

@@ -1,10 +1,22 @@
 
+.home_slide {
+  min-height: 100vmin;
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+}
 
 // VIMEO
 
 .video_container {
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
 
 .video_balmain {
@@ -33,9 +45,8 @@ iframe {
 //ABOUT
 
 .about_home {
-  margin: 20vh auto;
+  margin: 0vh auto;
   width: 60vw;
-  text-align: center;
 }
 
 
@@ -55,10 +66,11 @@ iframe {
 //NEWSLETTER
 
 .text-newsletter {
-  margin-top: 20vh;
+  margin-top: 8vh;
   border: 1px solid;
   cursor: pointer;
   width: 60%;
+
 }
 
 

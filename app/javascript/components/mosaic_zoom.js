@@ -28,6 +28,37 @@ const zoom = () => {
         prev.classList.add("prev", "fa", "fa-chevron-left");
         document.body.appendChild(prev);
 
+        //touche controle
+        window.addEventListener("keydown", function (event) {
+          if (event.defaultPrevented) {
+            return; // Ne devrait rien faire si l'événement de la touche était déjà consommé.
+          }
+
+          switch (event.key) {
+            case "ArrowRight":
+              if ( parseInt(imgSelected.id) < numOfPics -1) {
+                var nextImageId = parseInt(imgSelected.id) + 1;
+                var nextImage = document.getElementById(nextImageId);
+                imgSelected.src = nextImage.src;
+                imgSelected.id = nextImage.id;
+              };
+              break;
+            case "ArrowLeft":
+              console.log('yo')
+              if ( 0 < parseInt(imgSelected.id)) {
+                var prevImageId = parseInt(imgSelected.id) - 1;
+                var prevImage = document.getElementById(prevImageId);
+                imgSelected.src = prevImage.src;
+                imgSelected.id = prevImage.id;
+              };
+              break;
+            default:
+              return; // Quitter lorsque cela ne gère pas l'événement touche.
+          }
+
+          // Annuler l'action par défaut pour éviter qu'elle ne soit traitée deux fois.
+          event.preventDefault();
+        }, true);
         //create cross
         // var cross = document.createElement("i");
         // cross.classList.add("cross", "fa", "fa-times");

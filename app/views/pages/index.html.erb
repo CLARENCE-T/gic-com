@@ -36,15 +36,15 @@
 </div>
 
 
-<div class="about_home home_slide scrollreveal">
-  <div class="slide-content">
-    <h1> <%= About.last.title %></h1>
-    <p > <%= About.last.description %></p>
+<div data-scroll-container class="about_home home_slide scrollreveal">
+  <div data-scroll-section class="slide-content">
+    <h1 data-scroll> <%= About.last.title %></h1>
+    <p  data-scroll > <%= About.last.description %></p>
   </div>
 </div>
 
-<div class="home_slide scrollreveal showroom">
-  <div id="masonry-container" class="masonry-grid">
+<div data-scroll-container class="home_slide scrollreveal showroom">
+  <div  data-scroll-section id="masonry-container" class="masonry-grid">
     <% @showroom.each_with_index do |picture, idx| %>
       <div class="masonry-grid-item <%= 'masonry-grid-item--width3' if (idx % 3 == 0) %>">
   <!--    <a class="prev" >&#10094;</a>
@@ -75,9 +75,8 @@
     </div>
   </div>
 </div>
-<br>
 <script>
-  ScrollReveal().reveal('.scrollreveal', { delay: 200, interval: 10, reset: true });
+  ScrollReveal().reveal('.scrollreveal', { delay: 350, interval: 10, reset: true });
 </script>
 
 

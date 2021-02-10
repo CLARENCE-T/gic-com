@@ -30,9 +30,6 @@ const zoom = () => {
 
         //touche controle
         window.addEventListener("keydown", function (event) {
-          if (event.defaultPrevented) {
-            return; // Ne devrait rien faire si l'événement de la touche était déjà consommé.
-          }
 
           switch (event.key) {
             case "ArrowRight":
@@ -44,7 +41,6 @@ const zoom = () => {
               };
               break;
             case "ArrowLeft":
-              console.log('yo')
               if ( 0 < parseInt(imgSelected.id)) {
                 var prevImageId = parseInt(imgSelected.id) - 1;
                 var prevImage = document.getElementById(prevImageId);

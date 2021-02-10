@@ -3,32 +3,7 @@ import Masonry from 'masonry-layout';
 
 const masonry = () => {
 
-$(document).ready(function() {
-    $('#content').show();
-    $('#loading').hide();
-});
 
-$(function(){
-
-var $container = $('#container');
-var width = $(window).width();
-var height = $(window).height();
-
-if ((width > 1024  )) {
-
-$container.imagesLoaded( function(){
-  $container.masonry({
-    itemSelector : '.box',
-    columnWidth: 120,
-      });
-    });
-
-    }
-    else {
-    //load the css styles for screen res below 1024
-    }
-
-});
 
 
     const grid = document.querySelector('.masonry-grid');

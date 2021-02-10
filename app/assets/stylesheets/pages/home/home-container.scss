@@ -1,6 +1,6 @@
 
 .home_slide {
-  min-height: 100vmin;
+  min-height: 90vmin;
   position: relative;
 }
 
@@ -46,7 +46,11 @@ iframe {
 
 .about_home {
   margin: 0vh auto;
-  width: 60vw;
+  width: 50vw;
+  h1, p {
+    width: 60%;
+    margin: auto;
+  }
 }
 
 
@@ -66,7 +70,7 @@ iframe {
 //NEWSLETTER
 
 .text-newsletter {
-  margin-top: 8vh;
+  margin: 2vh auto ;
   border: 1px solid;
   cursor: pointer;
   width: 60%;

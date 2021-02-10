@@ -22,6 +22,7 @@ require("@rails/activestorage").start()
 
 import { masonry } from "components/masonry"
 import { zoom } from "components/mosaic_zoom"
+import  { scroll } from "components/scroll_nav"
 
 
 
@@ -30,5 +31,11 @@ import { zoom } from "components/mosaic_zoom"
 document.addEventListener('turbolinks:load', () => {
   masonry()
   zoom()
-})
+  scroll()
+
+});
+
+
+
+
 

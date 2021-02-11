@@ -14,10 +14,11 @@
   </head>
 
   <body>
+
     <div class="container">
       <%= render 'shared/flashes' %>
       <%= render 'shared/head' %>
-      <div class="main-content <%="main-content-padding" if params[:controller] == 'pictures' %> ">
+      <div class="main-content <%="main-content-padding" if params[:controller] == 'pages' %> " >
         <%= yield %>
       </div>
 <!--     <p class="notice"><%= notice %></p>

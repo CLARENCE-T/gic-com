@@ -42,27 +42,6 @@
 
 
 
-html {
-  font-size: calc(100vw / 1920 * 10);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-between;
-  min-height:100vh;
-}
-
-.main-content {
-  margin-top: 25vmin;
-  flex-grow: 1;
-  width: 100%;
-}
-
-.main-content-padding {
-  margin-top: 0vh;
-}
 
 
 body {
@@ -75,6 +54,11 @@ h1, h2, p, div {
 }
 
 h1 {
+  font-size: 6vmin;
+}
+
+
+label {
   font-size: 6vmin;
 }
 

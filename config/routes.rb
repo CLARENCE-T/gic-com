@@ -12,7 +12,9 @@ Rails.application.routes.draw do
 
   root to: 'pages#index'
 
-  resources :pages, only: [:show, :index]
+  resources :pages, only: [:show, :index] do
+    resources :contacts, only: [:new, :create]
+  end
 
   resources :events, only: [:index, :show] do
     resources :pictures, only: [:index, :show]

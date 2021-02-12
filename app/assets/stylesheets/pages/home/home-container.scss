@@ -28,6 +28,16 @@ html {
   // align-content: center;
 }
 
+.arrow-down-home {
+  position: fixed;
+  font-size: 12rem !important;
+  z-index: 300;
+  bottom: 5%;
+  right: 50%;
+  color: white;
+  font-weight: 300;
+}
+
 //ABOUT
 
 // .about-home {

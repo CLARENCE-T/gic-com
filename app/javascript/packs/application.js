@@ -7,7 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 //= require("channels")
-//= require ("jquery")
+//= require ("jquery3")
 //= require ("jquery_ujs")
 //= require masonry/masonry
 //= require_tree .
@@ -20,20 +20,21 @@ require("@rails/activestorage").start()
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import { masonry } from "components/masonry"
-import { zoom } from "components/mosaic_zoom"
-import  { closePopUp } from "components/smooth_scoll"
-
-
-
-
+import { masonry } from "components/masonry";
+import { zoom } from "components/mosaic_zoom";
+import  { closePopUp } from "components/close_pop_up";
+import { smoothScroll } from "components/smooth_scroll"
+import { onLoad } from "components/on_load"
+import { removeOzero } from "components/remove_o-zero"
+import "components/masonry-event"
 
 document.addEventListener('turbolinks:load', () => {
-  masonry()
+  onLoad(masonry, removeOzero)
   zoom()
   closePopUp()
-
+  smoothScroll()
 });
+
 
 
 

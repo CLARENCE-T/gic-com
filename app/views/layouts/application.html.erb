@@ -11,14 +11,15 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script> ScrollReveal({ duration: 1000 }) </script>
+
   </head>
 
   <body>
-
     <div class="container">
+
       <%= render 'shared/flashes' %>
       <%= render 'shared/head' %>
-      <div class="main-content <%="main-content-padding" if params[:controller] == 'pages' %> " >
+      <div class="main-content my-scrollbar <%="main-content-padding" if params[:controller] == 'pages' %> " >
         <%= yield %>
       </div>
 <!--     <p class="notice"><%= notice %></p>

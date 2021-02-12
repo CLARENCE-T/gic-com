@@ -1,37 +1,28 @@
-// * {box-sizing: border-box}
-//   .mySlides {
-//     display: none
-//   }
-//   img {vertical-align: middle;}
-//   .slideshow-container {
-//   max-width: 80%;
-//   position: relative;
-//   margin: auto;
-//   }
-/* Boutons next & previous */
+
 .prev, .next {
 display: block;
 cursor: pointer;
 width: auto;
-padding: 16px;
-margin-top: -22px;
 color: black;
-font-weight: bold;
-font-size: 12rem;
 transition: 0.6s ease;
 user-select: none;
-border-radius: 15%;
+border-radius: 10%;
 position: fixed;
 top: 50%;
 z-index: 50;
 }
 
+.fa-chevron-right, .fa-chevron-left {
+  font-size: 2vh !important;
+}
 /* Position de "next button" à la droite */
 .prev {
   left: 10%;
+  padding: 16px 18px 16px 16px ;
 }
 .next {
   right: 10%;
+  padding: 16px 16px 16px 18px ;
 }
 /* En survol, ajoutez la couleur noire de l'arrière-plan avec un peu see-through */
 .prev:hover, .next:hover {

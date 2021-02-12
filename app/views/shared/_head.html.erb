@@ -1,6 +1,6 @@
 
 
-<div class = "header <%= params[:controller] == 'pages' ?
+<div class = "header <%= (params[:controller] == 'pages') ?
   "sticky" : "fixed" %>" >
   <div class="main_logo">
     <%= image_tag("logo_gic.png", class: "main_logo") %>

@@ -6,7 +6,7 @@
 <!--    <a class="prev" >&#10094;</a>
         <a class="next" >&#10095;</a> -->
         <% idxpicture = idx.to_s   %>
-        <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "event-pics") %>
+        <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "event-pics o-zero") %>
         <div class="d-none"><%= picture.description %> </div>
 
     </div>

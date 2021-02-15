@@ -1,6 +1,7 @@
 
 const zoom = () => {
-  const gridItems = document.querySelectorAll('.masonry-grid-item img');
+  const gridItems = document.querySelectorAll('.mosaic-zoom');
+  console.log(gridItems)
   gridItems.forEach((element1) => {
     element1.addEventListener('click', (event) => {
 
@@ -61,7 +62,7 @@ const zoom = () => {
         // imgSelected.appendChild(cross);
 
         //click on next
-        var numOfPics = document.querySelectorAll(".event-pics").length
+        var numOfPics = document.querySelectorAll(".masonry-item-pictures").length
 
         next.addEventListener('click', (next) => {
           if ( parseInt(imgSelected.id) < numOfPics -1) {

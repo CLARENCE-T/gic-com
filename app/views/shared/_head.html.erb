@@ -1,9 +1,8 @@
 
 
-<div class = "header <%= (params[:controller] == 'pages') ?
-  "sticky" : "fixed" %>" >
+<div class = "header sticky" >
   <div class="main_logo">
-    <%= image_tag("logo_gic.png", class: "main_logo") %>
+    <%= link_to image_tag("logo_gic.png", class: "main_logo"), root_path %>
   </div>
   <div class="nav-bar navbar-scrolled">
     <%= link_to "Acceuil", "/" %>

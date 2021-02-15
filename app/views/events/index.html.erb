@@ -1,25 +1,11 @@
-<div  data-masonry-options="{'columnWidth': 105, 'itemSelector':'.item'}" class="grid img-container js-masonry">
+<div class="masonry-grid-events">
   <% @events.each_with_index do |event,idx| %>
-  <div class="">
     <%= link_to event_pictures_path(event) do %>
-      <%= cl_image_tag(event.pictures.first.image.key, width: 100, height: 100, crop: :limit, gravity: :center, quality: 100, dpr: 3,alt: event.title, class: "events_pictures o-zero") %>
-    <div class="event_title center">
+      <%= cl_image_tag(event.pictures.first.image.key,width: 300, height: 300,crop: :thumb, gravity: :center, quality: 100, dpr: 4,alt: event.title, class: "masonry-item-events o-zero") %>
+    <div class="event_title center d-none">
       <h5> <%= event.title %> </h5>
       <p><%= event.description %></p>
     </div>
     <% end %>
-  </div>
   <% end %>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-

@@ -25,6 +25,9 @@
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
 .sticky {
   position: sticky;
 }
@@ -36,6 +39,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.event-text {
+  padding: 4px
 }
 
 .btn {

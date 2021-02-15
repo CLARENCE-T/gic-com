@@ -1,14 +1,15 @@
+<div class="event-text">
+  <p class="events-pics-description"> <%= @event.description %> </p>
+  <h1 class="events-pics-name"> <%= @event.title %> </h1>
+</div>
 
-<h1 class="events-pics-name"> <%= @event.title %> </h1>
-<div id="masonry-container" class="masonry-grid">
+<div class="masonry-grid-pictures">
+  <div class="grid-sizer"></div>
   <% @event.pictures.each_with_index do |picture, idx| %>
-    <div class="masonry-grid-item <%= 'masonry-grid-item--width2' if (idx % 3 == 0) %>">
-<!--    <a class="prev" >&#10094;</a>
-        <a class="next" >&#10095;</a> -->
+    <div class="masonry-card-pictures">
         <% idxpicture = idx.to_s   %>
-        <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "event-pics o-zero") %>
+        <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero mosaic-zoom") %>
         <div class="d-none"><%= picture.description %> </div>
-
     </div>
   <% end %>
 </div>

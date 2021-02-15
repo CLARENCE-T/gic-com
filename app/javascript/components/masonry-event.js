@@ -1,14 +1,16 @@
-import $ from 'jquery'
 import Masonry from 'masonry-layout';
 
 const masonryEvent = () => {
-  $('.grid').masonry({
-  // options
-  itemSelector: '.masonry-event-grid',
-  columnWidth: 200
-});
+  // if (document.querySelector('.masonry-grid-events')) {
+  //   new Masonry( '.masonry-grid-events', {
+  //     itemSelector: '.masonry-item-events',
+  //     percentPosition: true,
+  //     // percentPosition: true,
+  //     // fitWidth: true,
+  //     // gutter: 4,
+  //   });
+  //   console.log('masonry event  done')
+  // }
+};
 
-
-}
-
-export {   }
+export { masonryEvent }

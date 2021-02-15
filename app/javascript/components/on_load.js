@@ -2,7 +2,6 @@ const onLoad = (callback, callback2) => {
   var imgs = document.images,
   len = imgs.length,
   counter = 0;
-  console.log(imgs)
 
   Array.prototype.forEach.call( imgs, function(img) {
       if(img.complete)

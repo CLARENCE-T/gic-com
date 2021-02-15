@@ -1,54 +1,19 @@
-// Place all the styles related to the events controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-.mosaic_events {
+.masonry-grid-events {
+  margin: 0 auto;
+  // min-width: 60%;
+  // max-width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.event_card {
-  position: relative;
-  text-align: center;
-  margin: 3vh;
-  height: 5vh;
-  width: 5vh;
-
-  img{
-    opacity: 1;
-  }
-  img:hover {
-    opacity: 0.8;
-  }
+.masonry-item-events {
+  margin: 0 auto;
 
 }
 
-.event_title {
-  display: none;
-  color: white;
-  font-size: 4vh;
-  position: absolute;
-  background-color: rgba(122, 122, 122, 0.4);
-  width: 100%;
-  bottom: 0.45vmin;
-  font-family: 'Big Shoulders Display', cursive;
-
-  h5{
-    font-size: 4vmin;
-    margin: 0 auto;
-  }
-  p {
-    margin: 0vh auto 0.5vh auto;
-    font-size: 2vmin;
-  }
-
-
-}
-
-.events_pictures {
-  max-height: 80vh;
+.grid-sizer-events,
+.masonry-item-events {
+  // width: 32.5%;
+  padding: 1px;
 }

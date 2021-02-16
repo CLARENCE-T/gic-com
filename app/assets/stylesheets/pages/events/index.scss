@@ -5,6 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80%;
+  margin: auto;
 }
 
 .masonry-item-events {
@@ -14,6 +16,14 @@
 
 .grid-sizer-events,
 .masonry-item-events {
-  // width: 32.5%;
-  padding: 1px;
+  width: 31%;
+  padding: 5px;
+  object-fit: cover;
+  &:hover {
+    opacity: 0.8;
+  }
 }
+
+// .masonry-item-events-3 {
+//   width: 50%;
+// }

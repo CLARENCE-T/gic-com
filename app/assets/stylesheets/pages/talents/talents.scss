@@ -2,32 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.talent_card {
-  width: 60vw;
-  margin: 0 auto;
-  .left_side {
-    position: relative;
-    z-index: 1;
-    height: 100vh;
-  }
-  .right_side {
-    position: absolute;
-    z-index: -3;
-    top: 0;
-    left: 30vw;
+// .talent_card {
+//   width: 60vw;
+//   margin: 0 auto;
+//   .left_side {
+//     position: relative;
+//     z-index: 1;
+//     height: 100vh;
+//   }
+//   .right_side {
+//     position: absolute;
+//     z-index: -3;
+//     top: 0;
+//     left: 30vw;
 
-    .talent_pic {
-      display: none;
-      height: 100vh;
-    }
-  }
+//     .talent_pic {
+//       display: none;
+//       height: 100vh;
+//     }
+//   }
 
-  .talent_name {
-    font-size: 7vh;
-    margin-bottom: 4vh;
-    text-shadow: 0.5px 1px 1px white;
-    &:hover {
-      background-color: rgba(0,0,0,0.3);
-    }
-  }
-}
+//   .talent_name {
+//     font-size: 7vh;
+//     margin-bottom: 4vh;
+//     text-shadow: 0.5px 1px 1px white;
+//     &:hover {
+//       background-color: rgba(0,0,0,0.3);
+//     }
+//   }
+// }
+
+
+/* ---- grid ---- */
+

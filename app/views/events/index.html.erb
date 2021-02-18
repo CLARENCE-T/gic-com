@@ -11,7 +11,7 @@
         <%= cl_image_tag(event.pictures.first.image.key, quality: 100 ,alt: event.description, data: {id: idx}, class: "o-zero") %>
         <div class="text">
           <h1> <%= event.title %> </h1>
-          <p><%= event.description %></p>
+          <p><%= event.subtitle %></p>
         </div>
       <% end %>
       </div>
@@ -21,7 +21,7 @@
           <%= cl_image_tag(event.pictures.first.image.key, quality: 100 ,alt: event.description, data: {id: idx}, class: "o-zero") %>
           <div class="text">
             <h1> <%= event.title %> </h1>
-            <p><%= event.description %></p>
+            <p><%= event.subtitle %></p>
           </div>
         <% end %>
       </div>

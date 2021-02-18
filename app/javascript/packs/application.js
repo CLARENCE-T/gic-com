@@ -26,12 +26,14 @@ import { zoom } from "components/mosaic_zoom";
 import  { closePopUp } from "components/close_pop_up";
 import { onLoad } from "components/on_load"
 import { removeOzero } from "components/remove_o-zero"
+import { showContent } from "components/show-content"
 
 document.addEventListener('turbolinks:load', () => {
   onLoad(masonry, removeOzero)
   onLoad(masonryEvent, removeOzero)
   zoom()
   closePopUp()
+  showContent()
 });
 
 

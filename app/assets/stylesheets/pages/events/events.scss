@@ -1,1 +1,48 @@
-@import 'index';
+
+.masonry-grid-events {
+  margin: 0 auto;
+  // width: 100%;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // width: 80%;
+  min-width: 50%;
+  max-width: 90%;
+}
+
+.masonry-grid-events:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+.grid-sizer-events,
+.masonry-item-events {
+  width: 25%;
+  min-height: 10%;
+  border: 1px
+  float: left;
+  position: relative;
+  background-color: black;
+
+  &:hover {
+
+    .text{
+    opacity: 1;
+  }
+}
+
+  img {
+    width: 100%;
+  }
+}
+.text {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.masonry-item-events-3 {
+  width: 50%;
+}

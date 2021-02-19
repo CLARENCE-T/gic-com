@@ -9,10 +9,12 @@
       <div class="masonry-item-events masonry-item-events-3">
         <%= link_to event_pictures_path(event) do %>
         <%= cl_image_tag(event.pictures.first.image.key, quality: 100 ,alt: event.description, data: {id: idx}, class: "o-zero") %>
-        <div class="text">
-          <h1> <%= event.title %> </h1>
-          <p><%= event.subtitle %></p>
-        </div>
+          <div class="text">
+            <p><%= truncate event.description, length: 160 , :separator => ' '%></p>
+          </div>
+          <div class="pin">
+            <h1> <%= event.title %> </h1>
+          </div>
       <% end %>
       </div>
     <% else %>
@@ -20,8 +22,10 @@
         <%= link_to event_pictures_path(event) do %>
           <%= cl_image_tag(event.pictures.first.image.key, quality: 100 ,alt: event.description, data: {id: idx}, class: "o-zero") %>
           <div class="text">
+            <p><%= truncate event.description, length: 160 , :separator => ' ' %></p>
+          </div>
+          <div class="pin">
             <h1> <%= event.title %> </h1>
-            <p><%= event.subtitle %></p>
           </div>
         <% end %>
       </div>

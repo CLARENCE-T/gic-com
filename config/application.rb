@@ -9,7 +9,15 @@ Bundler.require(*Rails.groups)
 module GicCom
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
+    config.generators do |generate|
+      generate.assets false
+      generate.helper false
+      generate.test_framework :test_unit, fixture: false
+    end
+    config.load_defaults 6.
+    I18n.default_locale = :fr
+    config.time_zone="Paris"
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

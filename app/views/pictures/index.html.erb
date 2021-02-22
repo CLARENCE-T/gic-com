@@ -11,7 +11,7 @@
   <% @event.pictures.each_with_index do |picture, idx| %>
     <div class="masonry-card-pictures">
         <% idxpicture = idx.to_s   %>
-        <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero mosaic-zoom") %>
+        <%= cl_image_tag(picture.image.key, quality: 50 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero mosaic-zoom") %>
         <div class="d-none"><%= picture.description %> </div>
     </div>
   <% end %>

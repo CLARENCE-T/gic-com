@@ -34,8 +34,8 @@
       <div class="masonry-grid-pictures">
         <div class="grid-sizer"></div>
         <% @showroom.each_with_index do |picture, idx| %>
-              <% idxpicture = idx.to_s   %>
-              <%= cl_image_tag(picture.image.key, quality: 100 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero mosaic-zoom")%>
+          <% idxpicture = idx.to_s   %>
+          <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero")%>
         <% end %>
       </div>
   </div>
@@ -43,25 +43,25 @@
 <!-- Logo partner -->
   <div class="scrollreveal slide-content">
     <div class="center" style="width: 80%">
-      <h1 class="ta-center">Ils nous ont fait confiance: </h1>
+<!--       <h1 class="ta-center">Ils nous ont fait confiance: </h1> -->
       <div class="d-logo jc-center">
         <% @logos.each do |logo| %>
           <div class="logo">
             <% if logo.image.attached? %>
-              <%= cl_image_tag(logo.image.key,alt: logo.title, width: 80, height: 80, crop: :pad, dpr: 4.0) %>
+              <%= cl_image_tag(logo.image.key, quality: 20, alt: logo.title, width: 80, height: 80, crop: :pad, dpr: 3.0) %>
             <% end %>
           </div>
         <% end %>
       </div>
-      <div class="text-newsletter ta-center m-auto">
+      <!-- <div class="text-newsletter ta-center m-auto">
         <h1>Inscrivez-vous</h1>
         <h1>à la Newsletter</h1>
-      </div>
+      </div> -->
     </div>
   </div>
 
 
   <script>
-    ScrollReveal().reveal('.scrollreveal', { delay: 300, interval: 10, reset: true });
+    ScrollReveal().reveal('.scrollreveal', { delay: 100, interval: 10, reset: true });
   </script>
 

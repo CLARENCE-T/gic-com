@@ -61,7 +61,7 @@
     -webkit-filter: brightness(50%);
     }
     .text{
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 
@@ -73,12 +73,13 @@
     margin: 0;
     font-size: 5rem;
     font-weight: 600;
+    line-height: 1;
   }
   position: absolute;
   left: 50%;
   bottom: -12px;
   transform: translate(-50%,-50%);
-  background-color: #E09F7D;
+  background-color: #ff6c61;
   text-transform: uppercase;
   padding: .2em 2em;
   // border: 1px solid;

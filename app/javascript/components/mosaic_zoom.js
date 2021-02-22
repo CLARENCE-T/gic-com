@@ -62,7 +62,7 @@ const zoom = () => {
         // imgSelected.appendChild(cross);
 
         //click on next
-        var numOfPics = document.querySelectorAll(".masonry-item-pictures").length
+        var numOfPics = document.querySelectorAll(".masonry-item-events").length
 
         next.addEventListener('click', (next) => {
           if ( parseInt(imgSelected.id) < numOfPics -1) {

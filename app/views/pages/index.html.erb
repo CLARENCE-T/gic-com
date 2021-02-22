@@ -22,7 +22,7 @@
   </div>
 
 <!-- About home -->
-  <div class="scrollreveal slide-content ">
+  <div class="scrollreveal slide-content-lg ">
     <div class="about-home center">
       <h1> <%= About.last.title %></h1>
       <p> <%= About.last.description %></p>
@@ -30,7 +30,7 @@
   </div>
 
 <!-- gallery home -->
-  <div  class="slide-content scrollreveal home-gallery">
+  <div  class="slide-content-lg scrollreveal home-gallery">
       <div class="masonry-grid-pictures">
         <div class="grid-sizer"></div>
         <% @showroom.each_with_index do |picture, idx| %>
@@ -41,7 +41,7 @@
   </div>
 
 <!-- Logo partner -->
-  <div class="scrollreveal slide-content">
+  <div class="scrollreveal slide-content-sm">
     <div class="center" style="width: 80%">
 <!--       <h1 class="ta-center">Ils nous ont fait confiance: </h1> -->
       <div class="d-logo jc-center">

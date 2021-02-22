@@ -20,13 +20,23 @@ html {
   margin-top: 0vh;
 }
 
-.slide-content {
+.slide-content-lg {
   position: relative;
-  min-height: 70vh;
+  min-height: 80vh;
   // max-width: 100vw;
   // align-items: center;
   // align-content: center;
 }
+
+.slide-content-sm {
+  position: relative;
+  min-height: 30vh;
+  margin: 10vh 0 10vh 0;
+  // max-width: 100vw;
+  // align-items: center;
+  // align-content: center;
+}
+
 
 .arrow-down-home {
   position: fixed;

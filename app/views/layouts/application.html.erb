@@ -36,14 +36,14 @@
   <body>
     <div class="container">
 
-      <%= render 'shared/flashes' %>
-      <%= render 'shared/head' %>
+      <%= render 'shared/flashes' if params[:controller] != 'validations' %>
+      <%= render 'shared/head' if params[:controller] != 'validations' %>
       <div class="main-content my-scrollbar <%="main-content-padding" if params[:controller] == 'pages' %> " >
         <%= yield %>
       </div>
 <!--     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p> -->
-      <%= render 'shared/footer' %>
+      <%= render 'shared/footer' if params[:controller] != 'validations' %>
     </div>
   </body>
 </html>

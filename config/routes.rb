@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'validations/index'
   # get 'pictures/index'
   # get 'pictures/show'
   # get 'contacts/index'
@@ -8,7 +9,7 @@ Rails.application.routes.draw do
   # get 'contact/index'
   # get 'talents/index'
   # get 'pages/index'
-  # get 'events/index'
+  get '.well-known/pki-validation/', to: 'validations#index'
 
   root to: 'pages#index'
 

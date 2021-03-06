@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   # get 'contact/index'
   # get 'talents/index'
   # get 'pages/index'
-  get '.well-known/pki-validation/', to: 'validations#index'
 
   root to: 'pages#index'
 

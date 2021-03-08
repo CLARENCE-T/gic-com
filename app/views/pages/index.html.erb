@@ -21,13 +21,6 @@
     </div>
   </div> -->
 
-<!-- About home -->
-  <div class="scrollreveal slide-content-lg ">
-    <div class="about-home center">
-      <h1> <%= About.last.title %></h1>
-      <p> <%= About.last.description %></p>
-    </div>
-  </div>
 
 <!-- gallery home -->
   <div  class="slide-content-lg scrollreveal home-gallery">
@@ -38,6 +31,14 @@
           <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero")%>
         <% end %>
       </div>
+  </div>
+
+<!-- About home -->
+  <div class="scrollreveal slide-content-lg ">
+    <div class="about-home center">
+      <h1> <%= About.last.title %></h1>
+      <p> <%= About.last.description %></p>
+    </div>
   </div>
 
 <!-- Logo partner -->

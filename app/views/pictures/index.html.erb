@@ -9,7 +9,7 @@
 <div class="masonry-grid-events">
   <div class="grid-sizer-events"></div>
   <% @pictures.each_with_index do |picture,idx| %>
-    <% if (idx==0 || idx==4) %>
+    <% if (idx==0 || idx==5) %>
       <div class="masonry-item-events masonry-item-events-3">
           <% idxpicture = idx.to_s   %>
           <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>

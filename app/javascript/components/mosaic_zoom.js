@@ -12,7 +12,8 @@ const zoom = () => {
     //create new fullscreen image only if there is no fullscreen displayed
       if (fullscreen.length == 0) {
         //create img
-        var imgSelected = document.createElement("img");
+        let imgSelected = document.createElement("img");
+        // let closeBtn = document.createElement("div")
         imgSelected.src = element1.src;
         imgSelected.alt = element1.alt;
         imgSelected.id = element1.id;

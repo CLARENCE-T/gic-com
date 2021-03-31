@@ -1,6 +1,6 @@
 <div class="presentation">
   <h1><%= About.last.title %></h1>
-  <p> <%= About.last.description %> </p>
+  <p style="white-space: pre-line"> <%= About.last.description %> </p>
 </div>
 
 <%= simple_form_for @contact, html: { class: 'form-horizontal' },wrapper: :horizontal_form  do |f| %>

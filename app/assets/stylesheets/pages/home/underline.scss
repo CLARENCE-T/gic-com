@@ -12,8 +12,10 @@ Start Important Part
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
+  transition: background-size 0.25s ease-in, color 0.25s ease-in;
+
   &:hover {
+    color: white;
     background-size: 100% 100%;
   }
 }

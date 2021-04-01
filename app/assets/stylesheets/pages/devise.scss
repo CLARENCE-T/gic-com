@@ -9,9 +9,24 @@
     align-items: center;
     justify-content: space-between;
   }
-}
+  div.field > input {
+    height: 5vh;
+    border-radius: 2%;
+    border: 1.5px solid grey;
+    margin-bottom: 1vh;
+  }
 
-.field {
-  margin: 5vh;
-  height: 3vh;
+  label{
+    font-size: 3vh;
+  }
+
+  div.remember-me {
+    display: inline;
+  }
+
+  .sign-up, .forgot-pass {
+    font-size: 2vh;
+    margin-top: 2vh;
+  }
+
 }

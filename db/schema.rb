@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_01_071816) do
+ActiveRecord::Schema.define(version: 2021_04_01_080237) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,7 +78,6 @@ ActiveRecord::Schema.define(version: 2021_04_01_071816) do
     t.boolean "cover", default: false
     t.boolean "showroom", default: false
     t.integer "classement", default: 1
-    t.integer "position"
     t.index ["event_id"], name: "index_pictures_on_event_id"
   end
 

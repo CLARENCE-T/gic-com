@@ -1,4 +1,4 @@
 class Event < ApplicationRecord
   validates :title, presence: true
-  has_many :pictures, -> { order(position: :asc) }
+  has_many :pictures
 end

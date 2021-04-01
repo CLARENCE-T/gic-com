@@ -34,6 +34,8 @@ gem 'jquery-rails'
 
 gem 'masonry-rails', '~> 0.2.4'
 
+gem 'acts_as_list'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

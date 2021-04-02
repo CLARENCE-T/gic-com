@@ -50,7 +50,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
+    background-color: white;
+    padding: 2vh;
 
     p {
       font-size: 2rem;
@@ -64,9 +66,8 @@
     }
     .text{
     opacity: 0.8;
+    }
   }
-}
-
 
 .pin {
   h1{

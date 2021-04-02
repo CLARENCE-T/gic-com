@@ -1,3 +1,4 @@
+@import "config/colors";
 
 html {
   font-size: calc(100vw / 1920 * 10);
@@ -75,4 +76,37 @@ html {
   cursor: pointer;
   width: 60%;
   margin-bottom: 6vmin;
+}
+
+
+//SHOWROOM
+
+
+.showroom {
+
+  .text-showroom p {
+    position: absolute;
+
+    line-height: normal;
+    color: black;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    margin: 10px 10px 0px 10px;
+    p {
+      font-size: 2rem;
+    }
+
+  }
+  &:hover {
+    img{
+    -webkit-filter: brightness(50%);
+    }
+    .text-showroom p{
+
+    color: $my-red;
+    opacity: 1;
+    }
+  }
 }

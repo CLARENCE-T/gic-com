@@ -9,40 +9,20 @@
 <div class="masonry-grid-events">
   <div class="grid-sizer-events"></div>
   <% @pictures.each_with_index do |picture,idx| %>
+
     <% if (idx==0 || idx==5) %>
       <div class="masonry-item-events masonry-item-events-3">
           <% idxpicture = idx.to_s   %>
           <%= cl_image_tag(picture.image.key, quality: 40 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
-          <% if picture.description != nil %>
-            <div class="text-picture">
-              <p><%= truncate picture.description, length: 160 , :separator => ' ' %></p>
-            </div>
-          <% end %>
       </div>
+
     <% else %>
       <div class="masonry-item-events">
           <% idxpicture = idx.to_s   %>
           <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
-          <% if picture.description != nil %>
-            <div class="text-picture">
-              <p><%= truncate picture.description, length: 70 , :separator => ' ' %></p>
-            </div>
-          <% end %>
       </div>
     <% end %>
+
   <% end %>
 </div>
 
-
-
-<!--
-<div class="masonry-grid-pictures">
-  <div class="grid-sizer"></div>
-  <% @event.pictures.each_with_index do |picture, idx| %>
-    <div class="masonry-card-pictures">
-        <% idxpicture = idx.to_s   %>
-        <%= cl_image_tag(picture.image.key, quality: 50 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero mosaic-zoom") %>
-        <div class="d-none"><%= picture.description %> </div>
-    </div>
-  <% end %>
-</div> -->

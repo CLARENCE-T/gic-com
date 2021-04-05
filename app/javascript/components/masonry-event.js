@@ -11,6 +11,16 @@ const masonryEvent = () => {
       // fitWidth: true,
     });
     console.log('masonry event  done')
+    const divPictures = document.querySelectorAll('.masonry-item-events');
+    divPictures.forEach((e) => {
+      const description = e.children[0].alt;
+      console.log(description)
+      const textDiv = document.createElement("div");
+      textDiv.classList.add("text-picture");
+      textDiv.textContent = description;
+      e.appendChild(textDiv);
+      console.log(textDiv)
+    })
   }
 };
 

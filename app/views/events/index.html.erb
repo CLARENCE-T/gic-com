@@ -5,6 +5,7 @@
 <div class="masonry-grid-events">
   <div class="grid-sizer-events"></div>
   <% @events.each_with_index do |event,idx| %>
+
     <% if (idx==0 || idx==4) %>
       <div class="masonry-item-events masonry-item-events-3">
         <%= link_to event_pictures_path(event) do %>
@@ -19,6 +20,7 @@
           </div>
         <% end %>
       </div>
+
     <% else %>
       <div class="masonry-item-events">
         <%= link_to event_pictures_path(event) do %>

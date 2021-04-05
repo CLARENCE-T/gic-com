@@ -32,34 +32,25 @@
 
 <!-- gallery home -->
   <div  class="slide-content-lg scrollreveal home-gallery">
-<!--       <div class="masonry-grid-pictures">
-        <div class="grid-sizer"></div>
+    <div class="masonry-grid-showroom">
+      <div class="grid-sizer-showroom"></div>
         <% @showroom.each_with_index do |picture, idx| %>
-            <% idxpicture = idx.to_s   %>
-            <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture, class: "masonry-item-pictures o-zero")%>
+        <div class="masonry-item-showroom">
+            <% idxpicture = idx.to_s %>
+            <%= cl_image_tag(picture.image.key, quality: 35 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero") %>
+            <% if picture.description != nil %>
+              <div class="text-picture">
+                <p><%= truncate picture.description, length: 160 , :separator => ' ' %></p>
+              </div>
+            <% end %>
+        </div>
         <% end %>
-      </div> -->
-  <div class="masonry-grid-showroom">
-    <div class="grid-sizer-showroom"></div>
-      <% @showroom.each_with_index do |picture, idx| %>
-      <div class="masonry-item-showroom">
-          <% idxpicture = idx.to_s   %>
-          <%= cl_image_tag(picture.image.key, quality: 35 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero") %>
-          <% if picture.description != nil %>
-            <div class="text-picture">
-              <p><%= truncate picture.description, length: 160 , :separator => ' ' %></p>
-            </div>
-          <% end %>
-      </div>
-      <% end %>
-  </div>
-
+    </div>
   </div>
 
 <!-- Logo partner -->
   <div class="scrollreveal slide-content-sm">
     <div class="center" style="width: 80%">
-<!--       <h1 class="ta-center">Ils nous ont fait confiance: </h1> -->
       <div class="d-logo jc-center">
         <% @logos.each do |logo| %>
           <div class="logo">

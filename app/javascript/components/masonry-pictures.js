@@ -11,7 +11,13 @@ const masonry = () => {
       // fitWidth: true,
       // transitionDuration: 0,
   });
-  console.log('masonry pictures done')
+  console.log('masonry pictures done');
+  const pics = document.querySelectorAll('.masonry-item-pictures');
+  console.log(pics);
+  pics.map((e) => {
+    debugger
+    console.log(e.alt)
+  })
   };
 };
 

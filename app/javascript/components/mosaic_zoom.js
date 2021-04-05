@@ -1,7 +1,6 @@
 
 const zoom = () => {
   const gridItems = document.querySelectorAll('.mosaic-zoom');
-  console.log(gridItems)
   gridItems.forEach((element1) => {
     element1.addEventListener('click', (event) => {
 

@@ -32,16 +32,9 @@
   overflow: hidden;
   float: left;
   position: relative;
-  // outline: 7px solid #fff;
-  // outline-offset: -6px;
-  // background-color: black;
-  // margin: 2px;
   img {
-    // outline: 7px solid #fff;
-    // outline-offset: -6px;
+
     object-fit: fill;
-    // padding: -10px -10px -10px -10px;
-    // width: 100%;
     width: calc(100% + 10px);
     margin-left: calc(-20px);
     margin-right: calc(-20px);
@@ -78,11 +71,11 @@
   }
   &:hover {
     img{
-    // opacity: 0.7;
+
     -webkit-filter: brightness(50%);
     }
     .text{
-    opacity: 0.8;
+    opacity: 1;
     }
   }
 

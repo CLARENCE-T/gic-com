@@ -1,6 +1,11 @@
 @import "config/colors";
 
 
+.title-albums{
+  margin-left: 10%;
+}
+
+
 .masonry-grid-events {
   margin: 0 auto;
   // width: 100%;
@@ -45,6 +50,9 @@
     -webkit-transition: .2s all;
   }
   .text {
+    h2 {
+      font-size: 8em;
+    }
     opacity: 0;
     position: absolute;
     left: 50%;
@@ -76,12 +84,13 @@
     margin: 0;
     font-size: 5rem;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5em;
   }
+  max-width: 80%;
   position: absolute;
   left: 50%;
-  bottom: -12px;
-  transform: translate(-50%,-50%);
+  bottom: 0.8em;
+  transform: translate(-50%,0%);
   background-color: $my-red;
   text-transform: uppercase;
   padding: .2em 2em;

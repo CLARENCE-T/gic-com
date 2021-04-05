@@ -32,13 +32,13 @@
   overflow: hidden;
   float: left;
   position: relative;
-
   img {
-    width: calc(100%);
-    padding: 10px 10px 0px 0px;
-    // margin-left: calc(-20px);
-    // margin-right: calc(-20px);
-    // margin-bottom: 10px;
+
+    object-fit: fill;
+    width: calc(100% + 10px);
+    margin-left: calc(-60px);
+    margin-right: calc(-60px);
+    margin-bottom: 30px;
     // height: 100%;
     -webkit-transition: .2s all;
   }
@@ -54,6 +54,7 @@
       margin-bottom: 2px;
       font-weight: 400;
       letter-spacing: .15rem;
+      color: $my-red;
     }
     opacity: 0;
     position: absolute;
@@ -88,7 +89,7 @@
     font-weight: 600;
     line-height: 1.5em;
   }
-  max-width: 80%;
+  max-width: 90%;
   position: absolute;
   left: 50%;
   bottom: 0.8em;

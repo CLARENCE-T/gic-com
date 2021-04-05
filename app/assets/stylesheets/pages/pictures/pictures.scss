@@ -46,9 +46,9 @@
   overflow: hidden;
   float: left;
   position: relative;
+  padding: 10px 10px 0px 0px;
   img {
     width: calc(100%);
-    padding: 10px;
     // margin-left: calc(-20px);
     // margin-right: calc(-20px);
     // margin-bottom: 10px;
@@ -61,7 +61,7 @@
     position: absolute;
     line-height: 2em;
     color: black;
-    bottom: 10px;
+    bottom: 0px;
     max-width: 80%;
     background-color: white;
     padding: 10px 30px 10px 20px;

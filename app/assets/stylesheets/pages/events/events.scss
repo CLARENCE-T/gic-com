@@ -32,13 +32,13 @@
   overflow: hidden;
   float: left;
   position: relative;
-  img {
 
-    object-fit: fill;
-    width: calc(100% + 10px);
-    margin-left: calc(-20px);
-    margin-right: calc(-20px);
-    margin-bottom: 10px;
+  img {
+    width: calc(100%);
+    padding: 10px 10px 0px 0px;
+    // margin-left: calc(-20px);
+    // margin-right: calc(-20px);
+    // margin-bottom: 10px;
     // height: 100%;
     -webkit-transition: .2s all;
   }

@@ -36,22 +36,21 @@
 }
 
 .masonry-item-events {
-
+  cursor: pointer;
   .text-picture p {
+    font-family: Big Shoulders Display;
+    letter-spacing: .15rem;
     position: absolute;
-
-    line-height: normal;
+    line-height: 2em;
     color: black;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, -50%);
+    bottom: 10px;
+    max-width: 80%;
     background-color: white;
-    margin: 10px 10px 0px 10px;
-    p {
-      font-size: 2rem;
-    }
-
+    padding: 10px 30px 10px 20px;
+    font-size: 2.2rem;
+    cursor: pointer;
   }
+
   &:hover {
     img{
     -webkit-filter: brightness(50%);

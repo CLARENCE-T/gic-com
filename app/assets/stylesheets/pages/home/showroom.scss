@@ -1,7 +1,7 @@
 @import "config/colors";
 
 
-.masonry-grid-events {
+.masonry-grid-showroom {
   margin: 0 auto;
   // width: 100%;
   // flex-wrap: wrap;
@@ -12,7 +12,7 @@
   margin-bottom: 5vh;
 }
 
-.masonry-grid-events:after {
+.masonry-grid-showroom:after {
   content: '';
   display: block;
   clear: both;
@@ -20,8 +20,8 @@
 
 
 
-.grid-sizer-events,
-.masonry-item-events {
+.grid-sizer-showroom,
+.masonry-item-showroom {
   width: 33.333333%;
   min-height: 10%;
   overflow: hidden;
@@ -50,20 +50,16 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
+    background-color: white;
     padding: 2vh;
+
     p {
-      font-size: 3.5rem;
-      letter-spacing: .15rem;
-      font-family: Big Shoulders Display;
+      font-size: 2rem;
     }
 
   }
   &:hover {
-    img{
-    // opacity: 0.7;
-    -webkit-filter: brightness(50%);
-    }
     .text{
     opacity: 0.8;
     }
@@ -89,7 +85,24 @@
   }
 }
 
-.masonry-item-events-3 {
+.masonry-item-showroom-3 {
   width: 66.666666%;
+}
+
+
+.masonry-item-showroom {
+
+  .text-picture p {
+    font-family: Big Shoulders Display;
+    letter-spacing: .15rem;
+    position: absolute;
+    line-height: 2em;
+    color: black;
+    bottom: 10px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px 30px 10px 20px;
+    font-size: 2.2rem;
+  }
 }
 

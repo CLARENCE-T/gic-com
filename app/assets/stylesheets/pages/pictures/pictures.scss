@@ -47,52 +47,22 @@
     max-width: 80%;
     background-color: white;
     padding: 10px 30px 10px 20px;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     cursor: pointer;
   }
 
+
   &:hover {
     img{
     -webkit-filter: brightness(50%);
     }
     .text-picture p{
-
     color: $my-red;
     opacity: 1;
     }
   }
 }
 
-
-
-.masonry-item-events {
-
-  .text-picture p {
-    position: absolute;
-
-    line-height: normal;
-    color: black;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    margin: 10px 10px 2px 10px;
-    p {
-      font-size: 2rem;
-    }
-
-  }
-  &:hover {
-    img{
-    -webkit-filter: brightness(50%);
-    }
-    .text-picture p{
-
-    color: $my-red;
-    opacity: 1;
-    }
-  }
-}
 
 .masonry-grid-pictures:after {
   content: '';

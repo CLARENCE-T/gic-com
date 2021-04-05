@@ -26,6 +26,7 @@ import { zoom } from "components/mosaic_zoom";
 import  { closePopUp } from "components/close_pop_up";
 import { onLoad } from "components/on_load"
 import { removeOzero } from "components/remove_o-zero"
+import { masonryG } from "components/masonry"
 // import { showContent } from "components/show-content"
 
 document.addEventListener('turbolinks:load', () => {
@@ -33,6 +34,7 @@ document.addEventListener('turbolinks:load', () => {
   onLoad(masonryEvent, removeOzero)
   zoom()
   closePopUp()
+  masonryG()
   // showContent()
 });
 

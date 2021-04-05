@@ -12,7 +12,7 @@
     <% if (idx==0 || idx==5) %>
       <div class="masonry-item-events masonry-item-events-3">
           <% idxpicture = idx.to_s   %>
-          <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
+          <%= cl_image_tag(picture.image.key, quality: 40 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
           <% if picture.description != nil %>
             <div class="text-picture">
               <p><%= truncate picture.description, length: 160 , :separator => ' ' %></p>
@@ -22,7 +22,7 @@
     <% else %>
       <div class="masonry-item-events">
           <% idxpicture = idx.to_s   %>
-          <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
+          <%= cl_image_tag(picture.image.key, quality: 40 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
           <% if picture.description != nil %>
             <div class="text-picture">
               <p><%= truncate picture.description, length: 100 , :separator => ' ' %></p>

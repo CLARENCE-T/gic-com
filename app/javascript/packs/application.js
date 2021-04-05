@@ -32,9 +32,9 @@ import { masonryG } from "components/masonry"
 document.addEventListener('turbolinks:load', () => {
   onLoad(masonry, removeOzero)
   onLoad(masonryEvent, removeOzero)
+  onLoad(masonryG, removeOzero)
   zoom()
   closePopUp()
-  masonryG()
   // showContent()
 });
 

@@ -97,16 +97,5 @@ html {
     p {
       font-size: 2rem;
     }
-
-  }
-  &:hover {
-    img{
-    -webkit-filter: brightness(50%);
-    }
-    .text-showroom p{
-
-    color: $my-red;
-    opacity: 1;
-    }
   }
 }

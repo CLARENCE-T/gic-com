@@ -1,4 +1,4 @@
-const onLoad = (callback, callback2) => {
+const onLoad = (callback, callback2, callback3) => {
   var imgs = document.images,
   len = imgs.length,
   counter = 0;
@@ -15,6 +15,9 @@ const onLoad = (callback, callback2) => {
     if ( counter === len ){
       callback();
       callback2();
+      if (callback3 != undefined) {
+        setTimeout(callback3, 1000);
+      }
     };
   }
 };

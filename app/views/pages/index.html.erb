@@ -35,14 +35,9 @@
     <div class="masonry-grid-showroom">
       <div class="grid-sizer-showroom"></div>
         <% @showroom.each_with_index do |picture, idx| %>
-        <div class="masonry-item-showroom">
+        <div class="masonry-item-showroom description-maker-showroom">
             <% idxpicture = idx.to_s %>
             <%= cl_image_tag(picture.image.key, quality: 35 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero") %>
-            <% if picture.description != nil %>
-              <div class="text-picture">
-                <p><%= truncate picture.description, length: 160 , :separator => ' ' %></p>
-              </div>
-            <% end %>
         </div>
         <% end %>
     </div>

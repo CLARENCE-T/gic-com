@@ -20,19 +20,22 @@ require("@rails/activestorage").start()
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import { masonry } from "components/masonry-pictures";
-import { masonryEvent } from "components/masonry-event";
 import { zoom } from "components/mosaic_zoom";
 import  { closePopUp } from "components/close_pop_up";
 import { onLoad } from "components/on_load"
 import { removeOzero } from "components/remove_o-zero"
-import { masonryG } from "components/masonry"
+import { masonryShowroom } from "components/masonry_showroom"
+import { masonryEvent } from "components/masonry-event";
+import { masonryPictures } from "components/masonry_pictures"
+import { descriptionMaker } from "components/description_maker"
+import { descriptionMakerShowroom } from "components/description_maker_showroom"
 // import { showContent } from "components/show-content"
 
 document.addEventListener('turbolinks:load', () => {
-  onLoad(masonry, removeOzero)
+  // onLoad(masonryPictures, removeOzero)
   onLoad(masonryEvent, removeOzero)
-  onLoad(masonryG, removeOzero)
+  onLoad(masonryPictures, removeOzero, descriptionMaker)
+  onLoad(masonryShowroom, removeOzero, descriptionMakerShowroom)
   zoom()
   closePopUp()
   // showContent()

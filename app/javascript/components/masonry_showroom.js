@@ -1,6 +1,6 @@
 import Masonry from 'masonry-layout';
 
-const masonryG = () => {
+const masonryShowroom = () => {
 
   if (document.querySelector('.masonry-grid-showroom')) {
     new Masonry( '.masonry-grid-showroom', {
@@ -15,8 +15,4 @@ const masonryG = () => {
   };
 };
 
-
-
-
-
-export { masonryG }
+export { masonryShowroom }

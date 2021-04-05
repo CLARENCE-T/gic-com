@@ -5,22 +5,10 @@ const masonryEvent = () => {
     new Masonry( '.masonry-grid-events', {
       itemSelector: '.masonry-item-events',
       columnWidth: '.grid-sizer-events',
-      // columnWidth: 20%,
       percentPosition: true,
-      // percentPosition: true,
-      // fitWidth: true,
+      // columnWidth: 20%,
     });
     console.log('masonry event  done')
-    const divPictures = document.querySelectorAll('.masonry-item-events');
-    divPictures.forEach((e) => {
-      const description = e.children[0].alt;
-      console.log(description)
-      const textDiv = document.createElement("div");
-      textDiv.classList.add("text-picture");
-      textDiv.textContent = description;
-      e.appendChild(textDiv);
-      console.log(textDiv)
-    })
   }
 };
 

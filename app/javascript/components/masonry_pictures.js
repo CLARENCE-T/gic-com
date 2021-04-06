@@ -6,9 +6,7 @@ const masonryPictures = () => {
       itemSelector: '.masonry-item-pictures',
       columnWidth: '.grid-sizer-pictures',
       percentPosition: true,
-      gutter: 5,
-      fitWidth: true,
-      // columnWidth: 20%,
+      gutter: 10,
     });
     console.log('masonry event  done')
   }

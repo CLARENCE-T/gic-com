@@ -7,9 +7,7 @@ const masonryShowroom = () => {
       itemSelector: '.masonry-item-showroom',
       columnWidth: '.grid-sizer-showroom',
       percentPosition: true,
-      // gutter: 40,
-      // fitWidth: true,
-      // transitionDuration: 0,
+      gutter: 10,
   });
   console.log('masonryG done')
   };

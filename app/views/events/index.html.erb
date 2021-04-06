@@ -30,8 +30,8 @@
           <%= cl_image_tag(event.pictures.exists?(cover: true) ? event.pictures.where(cover: true).first.image.key : event.pictures.first.image.key,
            quality: 20 ,alt: event.description,
             data: {id: idx}, class: "o-zero") %>
-          <div class="text">
-            <p><%= truncate event.description, length: 50 , :separator => ' ' %></p>
+          <div class="text" >
+            <p style="font-size: 2.5rem !important"><%= truncate event.description, length: 50 , :separator => ' ' %></p>
           </div>
           <div class="pin">
             <%= event.title %>

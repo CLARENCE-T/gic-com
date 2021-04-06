@@ -12,16 +12,24 @@
     <% if (idx==0 || idx==5) %>
       <div class="masonry-item-pictures masonry-item-pictures-3 description-maker">
           <% idxpicture = idx.to_s   %>
-          <%= cl_image_tag(picture.image.key, quality: 40 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
+          <%= cl_image_tag(picture.image.key,
+            quality: 40 ,alt: picture.description,
+            data: {id: idx},
+            id: idxpicture,
+            class: "o-zero mosaic-zoom") %>
       </div>
 
     <% else %>
       <div class="masonry-item-pictures description-maker">
           <% idxpicture = idx.to_s   %>
-          <%= cl_image_tag(picture.image.key, quality: 20 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero mosaic-zoom") %>
+          <%= cl_image_tag(picture.image.key,
+            quality: 20,
+            alt: picture.description,
+            data: {id: idx},
+            id: idxpicture,
+            class: "o-zero mosaic-zoom") %>
       </div>
     <% end %>
-
   <% end %>
 </div>
 

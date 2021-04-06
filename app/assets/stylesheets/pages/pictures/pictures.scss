@@ -1,9 +1,8 @@
 @import "config/colors";
 
-
 .event-text {
   display: flex;
-  width: 80vw;
+  width: 100%;
   margin: auto;
   p {
     line-height: 20px;
@@ -29,7 +28,7 @@
 .masonry-grid-pictures {
   margin: 0 auto;
   min-width: 50%;
-  max-width: 80%;
+  max-width: 90%;
   margin-bottom: 5vh;
 }
 
@@ -41,12 +40,11 @@
 
 .grid-sizer-pictures,
 .masonry-item-pictures {
-  width: 33.333333%;
+  width: 32%;
   cursor: pointer;
   overflow: hidden;
-  float: left;
   position: relative;
-  padding: 10px 10px 0px 0px;
+  margin-bottom: 10px;
   img {
     width: calc(100%);
     // margin-left: calc(-20px);
@@ -59,28 +57,29 @@
     font-family: Big Shoulders Display;
     letter-spacing: .15rem;
     position: absolute;
-    line-height: 2em;
-    color: black;
-    bottom: 0px;
-    max-width: 80%;
-    background-color: white;
-    padding: 10px 30px 10px 20px;
+    line-height: 0.6em;
+    color: white;
+    bottom: 2px;
+    background-color: #332d2d5e;
+    padding: 10px;
     font-size: 2.5rem;
-
+    width: 100%;
+    text-align: center;
   }
   &:hover {
     img{
     -webkit-filter: brightness(50%);
     }
     .text-picture {
-    color: $my-red;
+    color: white;
+    background-color: $my-red;
     opacity: 1;
     }
   }
 }
 
 .masonry-item-pictures-3 {
-  width: 66.666666%;
+  width: 65%;
 }
 
 

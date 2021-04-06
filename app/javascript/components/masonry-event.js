@@ -6,9 +6,7 @@ const masonryEvent = () => {
       itemSelector: '.masonry-item-events',
       columnWidth: '.grid-sizer-events',
       percentPosition: true,
-      // gutter: 5,
-      // fitWidth: true,
-      // columnWidth: 20%,
+      gutter: 10,
     });
     console.log('masonry event  done')
   }

@@ -28,6 +28,19 @@
   }
 }
 
+@media all and (max-device-width: 480px)
+{
+  .masonry-grid-pictures{
+    width: 100% !important;
+  }
+  .masonry-item-pictures{
+    width: 35% !important;
+    margin-bottom: 0px !important;
+    background-color: black;
+  }
+
+}
+
 .masonry-grid-pictures {
   margin: 0 auto;
   min-width: 50%;

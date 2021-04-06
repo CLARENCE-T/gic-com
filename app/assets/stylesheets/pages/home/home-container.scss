@@ -17,9 +17,6 @@ html {
   width: 100%;
 }
 
-.main-content-padding {
-  margin-top: 0vh;
-}
 
 .slide-content-lg {
   position: relative;
@@ -28,6 +25,20 @@ html {
   // align-items: center;
   // align-content: center;
 }
+
+
+
+@media all and (max-device-width: 480px)
+{
+  .slide-content-lg{
+    position: inherit;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+
+  }
+}
+
 
 .slide-content-sm {
   position: relative;
@@ -41,15 +52,15 @@ html {
 }
 
 
-.arrow-down-home {
-  position: fixed;
-  font-size: 12rem !important;
-  z-index: 300;
-  bottom: 5%;
-  right: 50%;
-  color: white;
-  font-weight: 300;
-}
+// .arrow-down-home {
+//   position: fixed;
+//   font-size: 12rem !important;
+//   z-index: 300;
+//   bottom: 5%;
+//   right: 50%;
+//   color: white;
+//   font-weight: 300;
+// }
 
 //ABOUT
 

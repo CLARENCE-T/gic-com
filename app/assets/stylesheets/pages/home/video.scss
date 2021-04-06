@@ -1,5 +1,13 @@
 // VIMEO
 
+
+@media all and (max-device-width: 480px)
+{
+  .video_container iframe{
+    display: none;
+  }
+}
+
 .video_container {
   width: 100%;
 }

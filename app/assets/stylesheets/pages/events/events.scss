@@ -28,17 +28,16 @@
 .grid-sizer-events,
 .masonry-item-events {
   width: 33.333333%;
-  min-height: 10%;
   overflow: hidden;
   float: left;
   position: relative;
   img {
-
     object-fit: fill;
-    width: calc(100% + 10px);
-    margin-left: calc(-60px);
-    margin-right: calc(-60px);
-    margin-bottom: 30px;
+    width: 100%;
+    // width: calc(100% + 10px);
+    // margin-left: calc(-0px);
+    // margin-right: calc(60px);
+    // margin-bottom: 30px;
     // height: 100%;
     -webkit-transition: .2s all;
   }
@@ -72,7 +71,6 @@
   }
   &:hover {
     img{
-
     -webkit-filter: brightness(50%);
     }
     .text{
@@ -81,23 +79,16 @@
   }
 
 .pin {
-  h1{
-    color: white;
-    // opacity: 0.5;
-    margin: 0;
-    font-size: 5rem;
-    font-weight: 600;
-    line-height: 1.5em;
-  }
-  max-width: 90%;
+  color: white;
+  font-size: 5rem;
+  max-width: 100%;
   position: absolute;
   left: 50%;
-  bottom: 0.8em;
+  bottom: 0em;
   transform: translate(-50%,0%);
   background-color: $my-red;
   text-transform: uppercase;
-  padding: .2em 2em;
-  // border: 1px solid;
+  padding: .2em 1em;
   }
 }
 

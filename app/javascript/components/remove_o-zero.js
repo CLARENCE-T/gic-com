@@ -3,7 +3,7 @@ const removeOzero = () => {
   imgs.forEach((element) => {
     element.classList.remove('o-zero')
   });
-    console.log('zero removed')
+    // console.log('zero removed')
 }
 
 export { removeOzero }

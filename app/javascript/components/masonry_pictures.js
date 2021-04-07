@@ -8,7 +8,7 @@ const masonryPictures = () => {
       percentPosition: true,
       gutter: 10,
     });
-    console.log('masonry event  done')
+    // console.log('masonry event  done')
   }
 };
 

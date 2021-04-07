@@ -5,19 +5,22 @@ const zoom = () => {
     element1.addEventListener('click', (event) => {
 
       //removing old one
-      var fullscreen = document.querySelectorAll('.fullscreen-pics')
-      var container = document.querySelector('.container')
-
+      var fullscreen = document.querySelectorAll('.fullscreen-pics');
+      var container = document.querySelector('.container');
+      var numOfPics = document.querySelectorAll(".masonry-item-events").length;
+      console.log(numOfPics)
     //create new fullscreen image only if there is no fullscreen displayed
       if (fullscreen.length == 0) {
         //create img
+        let divImg = document.createElement("div");
         let imgSelected = document.createElement("img");
         // let closeBtn = document.createElement("div")
         imgSelected.src = element1.src;
         imgSelected.alt = element1.alt;
         imgSelected.id = element1.id;
         imgSelected.classList.add("fullscreen-pics");
-        document.body.appendChild(imgSelected);
+        document.body.appendChild(divImg);
+        divImg.appendChild(imgSelected);
 
         //create arrow
         var next = document.createElement("i");
@@ -27,7 +30,13 @@ const zoom = () => {
 
         var prev = document.createElement("i");
         prev.classList.add("prev", "fa", "fa-chevron-left");
+
         document.body.appendChild(prev);
+
+        var crossClose = document.createElement("i");
+        crossClose.classList.add("cross-close");
+
+        divImg.appendChild(crossClose);
 
         //touche controle
         window.addEventListener("keydown", function (event) {
@@ -39,6 +48,7 @@ const zoom = () => {
                 var nextImage = document.getElementById(nextImageId);
                 imgSelected.src = nextImage.src;
                 imgSelected.id = nextImage.id;
+
               };
               break;
             case "ArrowLeft":
@@ -49,6 +59,13 @@ const zoom = () => {
                 imgSelected.id = prevImage.id;
               };
               break;
+            case "Escape":
+                imgSelected.remove()
+                next.remove()
+                prev.remove()
+                crossClose.remove()
+                document.querySelector('.container').classList.remove('blur')
+              break;
             default:
               return; // Quitter lorsque cela ne gère pas l'événement touche.
           }
@@ -56,13 +73,9 @@ const zoom = () => {
           // Annuler l'action par défaut pour éviter qu'elle ne soit traitée deux fois.
           event.preventDefault();
         }, true);
-        //create cross
-        // var cross = document.createElement("i");
-        // cross.classList.add("cross", "fa", "fa-times");
-        // imgSelected.appendChild(cross);
+
 
         //click on next
-        var numOfPics = document.querySelectorAll(".masonry-item-events").length
 
         next.addEventListener('click', (next) => {
           if ( parseInt(imgSelected.id) < numOfPics -1) {
@@ -83,17 +96,26 @@ const zoom = () => {
           };
         });
 
-
-        //blur the background
-        document.querySelector('.container').classList.toggle('blur');
-
         //click again to remove the fullscreen
         imgSelected.addEventListener('click', (event) => {
           imgSelected.remove()
           next.remove()
           prev.remove()
-          document.querySelector('.container').classList.toggle('blur')
+          crossClose.remove()
+          document.querySelector('.container').classList.remove('blur')
         });
+
+        crossClose.addEventListener('click', (event) => {
+          imgSelected.remove()
+          next.remove()
+          prev.remove()
+          crossClose.remove()
+          document.querySelector('.container').classList.remove('blur')
+        });
+
+        //blur the background
+        document.querySelector('.container').classList.toggle('blur');
+
       };
 
 

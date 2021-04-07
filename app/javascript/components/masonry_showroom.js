@@ -9,7 +9,7 @@ const masonryShowroom = () => {
       percentPosition: true,
       gutter: 10,
   });
-  console.log('masonryG done')
+  // console.log('masonryG done')
   };
 };
 

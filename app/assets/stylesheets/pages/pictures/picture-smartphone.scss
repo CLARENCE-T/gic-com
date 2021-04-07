@@ -1,0 +1,28 @@
+.event-text {
+  flex-direction: column-reverse;
+  text-align: center !important;
+  margin-top: 10px !important;
+  padding: 0px !important;
+  p {
+    width: 90vw !important;
+    text-align: center !important;
+    margin: 40px auto !important;
+  }
+}
+
+@media all and (max-device-width: 480px)
+{
+  .masonry-grid-pictures{
+    width: 98.5vw !important;
+    margin-left: 1.5vw !important;
+  }
+  .masonry-item-pictures, .grid-sizer-pictures{
+    width: 47% !important;
+}
+  .masonry-item-pictures{
+    margin-bottom: 10px !important;
+    background-color: black;
+
+  }
+
+}

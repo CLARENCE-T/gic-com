@@ -7,7 +7,7 @@ const zoom = () => {
       //removing old one
       var fullscreen = document.querySelectorAll('.fullscreen-pics');
       var container = document.querySelector('.container');
-      var numOfPics = document.querySelectorAll(".masonry-item-events").length;
+      var numOfPics = document.querySelectorAll(".masonry-item-pictures").length;
       console.log(numOfPics)
     //create new fullscreen image only if there is no fullscreen displayed
       if (fullscreen.length == 0) {

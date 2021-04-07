@@ -1,6 +1,13 @@
 @import "config/colors";
 
 
+.showroom-container {
+  min-height: 80vh;
+  margin-bottom: 10vh;
+}
+
+
+
 .masonry-grid-showroom {
   margin: 0 auto;
   // width: 100%;
@@ -23,6 +30,9 @@
 .grid-sizer-showroom,
 .masonry-item-showroom {
   width: 32%;
+}
+
+.masonry-item-showroom {
   min-height: 10%;
   overflow: hidden;
   float: left;

@@ -22,8 +22,8 @@
   </div>
 
 <!-- About home -->
-  <div class="scrollreveal slide-content-lg">
-    <div class="about-home center">
+  <div class="scrollreveal slide-content-lg about-container">
+    <div class="about-home">
       <h1> <%= About.last.title %></h1>
       <p style="white-space: pre-line"> <%= About.last.description %></p>
     </div>
@@ -44,21 +44,15 @@
   </div>
 
 <!-- Logo partner -->
-  <div class="scrollreveal slide-content-sm">
-    <div class="center" style="width: 80%">
-      <div class="d-logo jc-center">
-        <% @logos.each do |logo| %>
-          <div class="logo">
-            <% if logo.image.attached? %>
-              <%= cl_image_tag(logo.image.key, quality: 20, alt: logo.title, width: 80, height: 80, crop: :pad, dpr: 3.0) %>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-      <!-- <div class="text-newsletter ta-center m-auto">
-        <h1>Inscrivez-vous</h1>
-        <h1>à la Newsletter</h1>
-      </div> -->
+  <div class="scrollreveal logo-container">
+    <div class="d-logo jc-center">
+      <% @logos.each do |logo| %>
+        <div class="logo">
+          <% if logo.image.attached? %>
+            <%= cl_image_tag(logo.image.key, quality: 20, alt: logo.title, width: 80, height: 80, crop: :pad, dpr: 3.0) %>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 

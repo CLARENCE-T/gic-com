@@ -1,0 +1,37 @@
+
+@media all and (max-device-width: 480px)
+{
+  .wrapper {
+    display: none
+  }
+  .video_container  {
+    display: none
+  }
+  .about-container {
+    width: 80% !important;
+    margin-top: 0 !important;
+    margin-bottom: 10vh !important;
+  }
+
+  .slide-content-lg{
+    position: inherit;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+
+  }
+  .masonry-grid-showroom {
+    max-width: 100% !important;
+  }
+  .grid-sizer-showroom, .masonry-item-showroom{
+    width: 48% !important;
+  }
+  .logo img {
+    width: 15vw !important;
+    height: 15vw !important;
+  }
+
+  .slide-content-sm {
+    width: 100% !important;
+  }
+}

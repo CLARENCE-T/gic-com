@@ -37,7 +37,12 @@
         <% @showroom.each_with_index do |picture, idx| %>
         <div class="masonry-item-showroom description-maker-showroom">
             <% idxpicture = idx.to_s %>
-            <%= cl_image_tag(picture.image.key, quality: 35 ,alt: picture.description, data: {id: idx}, id: idxpicture ,class: "o-zero") %>
+            <%= cl_image_tag(picture.image.key,
+              quality: 35 ,
+              alt: picture.description,
+              data: {id: idx},
+              id: idxpicture ,
+              class: "o-zero") %>
         </div>
         <% end %>
     </div>
@@ -49,7 +54,13 @@
       <% @logos.each do |logo| %>
         <div class="logo">
           <% if logo.image.attached? %>
-            <%= cl_image_tag(logo.image.key, quality: 20, alt: logo.title, width: 80, height: 80, crop: :pad, dpr: 3.0) %>
+            <%= cl_image_tag(logo.image.key,
+              quality: 20,
+              alt: logo.title,
+              width: 80,
+              height: 80,
+              crop: :pad,
+              dpr: 3.0) %>
           <% end %>
         </div>
       <% end %>

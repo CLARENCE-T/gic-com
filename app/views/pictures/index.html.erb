@@ -13,7 +13,8 @@
       <div class="masonry-item-pictures masonry-item-pictures-3 description-maker">
           <% idxpicture = idx.to_s   %>
           <%= cl_image_tag(picture.image.key,
-            quality: 40 ,alt: picture.description,
+            quality: 40 ,
+            alt: picture.description,
             data: {id: idx},
             id: idxpicture,
             class: "o-zero mosaic-zoom") %>

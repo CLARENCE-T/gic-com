@@ -1,11 +1,10 @@
 class PicturesController < ApplicationController
   def index
-    @event = Event.find(params[:event_id])
-    @pictures = Event.find(params[:event_id]).pictures.order(classement: :asc)
+    @event = Event.friendly.find(params[:event_id])
+    @pictures = Event.friendly.find(params[:event_id]).pictures.order(classement: :asc)
   end
 
   def show
-    @event = Event.find(params[:event_id])
-
+    @event = Event.friendly.find(params[:event_id])
   end
 end

@@ -21,6 +21,7 @@ const zoom = () => {
         document.body.appendChild(divImg);
         divImg.appendChild(imgSelected);
 
+
         //create arrow
         var next = document.createElement("i");
         next.classList.add("next", "fa", "fa-chevron-right");

@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     resources :contacts, only: [:new, :create]
   end
 
-  resources :events, only: [:index, :show] do
+  resources :events, path: "evenements", only: [:index, :show] do
     resources :pictures, only: [:index, :show]
   end
 

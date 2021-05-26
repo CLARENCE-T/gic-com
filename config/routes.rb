@@ -13,11 +13,11 @@ Rails.application.routes.draw do
   root to: 'pages#index'
 
   resources :pages, only: [:show, :index] do
-    resources :contacts, only: [:new, :create]
+    resources :contacts, path: "contact", only: [:new, :create]
   end
 
   resources :events, path: "evenements", only: [:index, :show] do
-    resources :pictures, only: [:index, :show]
+    resources :pictures, path: "album", only: [:index, :show]
   end
 
   resources :talents, only: [:index, :show]

@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'font-awesome-rails'
 
 gem 'simple_form'
-
+gem 'friendly_id', '~> 5.1.0'
 gem 'cloudinary', '~> 1.16.0'
 
 gem 'jquery-rails'

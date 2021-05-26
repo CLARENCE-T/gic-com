@@ -4,24 +4,23 @@
 
 .event-text {
   display: flex;
-  width: 100%;
+  width: 80%;
   margin: auto;
-  p {
+  .events-pics-description {
     overflow: scroll;
     max-height: 140px;
     line-height: 20px;
     text-align: right;
-    width: 50vw;
-    margin-left: 40px;
     vertical-align: center;
-  }
-  h1 {
-    margin: 0px 0px 0px 4vw;
-    font-size: 18rem;
-    width: 50vw;
 
   }
-  h2 {
+  .events-pics-title {
+    margin: 0px 0px 0px 4vw;
+    font-size: 18rem;
+    width: 0vw;
+
+  }
+  .events-pics-subtitle {
     font-size: 3rem;
     font-weight: 400;
     margin-top: 0px;
@@ -31,6 +30,7 @@
 }
 
 .masonry-grid-pictures {
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 5vh;
 }

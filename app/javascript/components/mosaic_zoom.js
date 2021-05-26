@@ -8,7 +8,6 @@ const zoom = () => {
       var fullscreen = document.querySelectorAll('.fullscreen-pics');
       var container = document.querySelector('.container');
       var numOfPics = document.querySelectorAll(".masonry-item-pictures").length;
-      console.log(numOfPics)
     //create new fullscreen image only if there is no fullscreen displayed
       if (fullscreen.length == 0) {
         //create img
@@ -32,10 +31,8 @@ const zoom = () => {
         prev.classList.add("prev", "fa", "fa-chevron-left");
 
         document.body.appendChild(prev);
-
         var crossClose = document.createElement("i");
         crossClose.classList.add("cross-close");
-
         divImg.appendChild(crossClose);
 
         //touche controle

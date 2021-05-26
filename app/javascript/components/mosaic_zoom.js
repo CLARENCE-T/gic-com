@@ -34,7 +34,6 @@ const zoom = () => {
         var crossClose = document.createElement("i");
         crossClose.classList.add("cross-close");
         divImg.appendChild(crossClose);
-
         //touche controle
         window.addEventListener("keydown", function (event) {
 

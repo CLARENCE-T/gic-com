@@ -2,13 +2,16 @@
 
 
 .cross-close {
-  position: absolute;
+  position: fixed;
   z-index: 100;
+  top: 6%;
+  right: 6%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
   right: 32px;
-  top: 32px;
   width: 32px;
   height: 32px;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .cross-close:hover {
   opacity: 1;
@@ -32,17 +35,18 @@
 display: block;
 cursor: pointer;
 width: auto;
-color: #919191;
+color: grey;
 transition: 0.6s ease;
 user-select: none;
 border-radius: 10%;
 position: fixed;
 top: 50%;
 z-index: 50;
+opacity: 0.8;
 }
 
 .fa-chevron-right, .fa-chevron-left {
-  font-size: 2vh !important;
+  font-size: 4vh !important;
 }
 /* Position de "next button" à la droite */
 .prev {
@@ -55,8 +59,8 @@ z-index: 50;
 }
 /* En survol, ajoutez la couleur noire de l'arrière-plan avec un peu see-through */
 .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-color: $my-red;
+  opacity: 1;
+  color: black;
 }
 
 

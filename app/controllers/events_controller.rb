@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.order("RANDOM()").all
+    @events = Event.friendly.order("RANDOM()").all
   end
 
   # def show

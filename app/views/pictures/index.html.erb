@@ -1,5 +1,7 @@
 <div class="event-text">
-  <p class="events-pics-description"> <%= @event.description %> </p>
+  <% if (@event.description)%>
+    <p class="events-pics-description"> <%= @event.description %> </p>
+  <% end %>
   <div>
     <h1 class="events-pics-title"> <%= @event.title %> </h1>
     <h2 class="events-pics-subtitle"> <%= @event.subtitle %> </h2>
